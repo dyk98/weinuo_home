@@ -1,113 +1,96 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="body">
+    <!--写好一个导航栏在此调用-->
+    <div class="head_bar">
+
+    </div>
+    <!--这里是swiper的滚动图-->
+    <div class="header">
+      <p>{{msg}}</p>
+    </div>
+    <!--这里是主题内容-->
+    <div class="container">
+      <div class="service_area">
+        <h1>服务</h1>
+      </div>
+      <div class="ways_area">
+        <h1>方案</h1>
+      </div>
+      <div class="friend_area">
+        <h1>行业</h1>
+      </div>
+      <div class="cases_area">
+        <h1>案例</h1>
+      </div>
+      <div class="move_area">
+        <h1>行业</h1>
+      </div>
+    </div>
+    <!--这里是底部导航栏-->
+    <div class="foot">
+
+    </div>
   </div>
 </template>
 
-<script>
+<script scoped>
+import Test from "./Test";
 export default {
   name: 'HelloWorld',
-  data () {
+    components: {Test},
+    data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: '这里是swiper的滚动图' ,
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
+<style >
+  .body {
+    height: 2880px;
+
+  }
+  .head_bar {
+    height: 65px;
+    width: 100%;
+    background-color: #2c3e50;
+    top: -60px;
+    position: relative;
+  }
+  .header {
+    height: 200px;
+    background-color: #f8cbcb;
+    top: -50px;
+    position: relative;
+  }
+.container {
+  width: 100%;
+  background-color: whitesmoke;
+  height: 1819px;
+  position: relative;
+  top: -30px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .service_area {
+    height: 252px;
+    background-color: #4288ce;
+  }
+  .ways_area {
+    height: 344px;
+    background-color: #666600;
+  }
+  .friend_area {
+    height: 318px;
+    background-color: #880000;
+  }
+  .cases_area {
+    height: 452px;
+    background-color: #008800;
+  }
+  .move_area {
+    height: 453px;
+    background-color: aqua;
+  }
+
 </style>
