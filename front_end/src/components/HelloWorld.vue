@@ -2,7 +2,7 @@
   <div class="body">
     <!--写好一个导航栏在此调用-->
     <div class="head_bar">
-
+<hi>导航</hi>
     </div>
     <!--这里是swiper的滚动图-->
     <div class="header">
