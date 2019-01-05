@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import CompanyInFo from '@/components/common/CompanyInFo'
+import Home from '@/components/Home'
 
 Vue.use(Router)
+Vue.use('company_info',CompanyInFo)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: CompanyInFo
+    }, {
+      path: '/common',
+      name: 'CompanyInFo',
+      component: CompanyInFo
     }
   ]
 })
