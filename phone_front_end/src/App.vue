@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <h1>天津维诺智创大数据科技有限公司
+    </h1>
     <router-view/>
   </div>
 </template>
