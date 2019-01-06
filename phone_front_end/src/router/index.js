@@ -19,6 +19,12 @@ import Case from '@/components/case'
 import CaseFirst from '@/components/case/CaseFirst'
 import About from '@/components/about'
 
+import Advantage from '@/components/about/Advantage'
+import Introduction from '@/components/about/Introduction'
+import Idea from '@/components/about/Idea'
+import Pattern from '@/components/about/Pattern'
+import Prize from '@/components/about/Prize'
+import Business from '@/components/about/Business'
 
 
 Vue.use(Router)
@@ -89,6 +95,30 @@ export default new Router({
             path: '/industry/Tourism',
             name: 'Tourism',
             component: Tourism
-        },
+        }, {
+            path: '/about/Advantage',
+            name: 'Advantage',
+            component: Advantage
+        }, {
+            path: '/about/Introduction',
+            name: 'Introduction',
+            component: Introduction
+        }, {
+            path: '/about/Idea',
+            name: 'Idea',
+            component: Idea
+        }, {
+            path: '/about/Pattern',
+            name: 'Pattern',
+            component: Pattern
+        }, {
+            path: '/about/Prize',
+            name: 'Prize',
+            component: Prize
+        }, {
+            path: '/about/Business',
+            name: 'Business',
+            component: Business
+        }
     ]
 })

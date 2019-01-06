@@ -146,16 +146,40 @@
             <router-link class="tag" to="/about">关于</router-link>
             <div class="hr"></div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #ea4c57">公司历史</div>
-                <div style="flex: 1; background-color: #4894f8">核心业务</div>
+                <div style="flex: 1; background-color: #ea4c57">
+                    <router-link class="about_link" to="/about/Introduction">
+                        <p>公司介绍</p>
+                    </router-link>
+                </div>
+                <div style="flex: 1; background-color: #4894f8">
+                    <router-link class="about_link" to="/about/Business">
+                        <p>核心业务</p>
+                    </router-link>
+                </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #f894f8">公司理念</div>
-                <div style="flex: 1; background-color: #7ae55d">经营模式</div>
+                <div style="flex: 1; background-color: #f894f8">
+                    <router-link class="about_link" to="/about/Idea">
+                        <p>公司理念</p>
+                    </router-link>
+                </div>
+                <div style="flex: 1; background-color: #7ae55d">
+                    <router-link class="about_link" to="/about/Pattern">
+                        <p>经营模式</p>
+                    </router-link>
+                </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #dad656">团队优势</div>
-                <div style="flex: 1; background-color: #f4aa3c">奖项证书</div>
+                <div style="flex: 1; background-color: #dad656">
+                    <router-link class="about_link" to="/about/Advantage">
+                        <p>团队优势</p>
+                    </router-link>
+                </div>
+                <div style="flex: 1; background-color: #f4aa3c">
+                    <router-link class="about_link" to="/about/Advantage">
+                        <p>奖项证书</p>
+                    </router-link>
+                </div>
             </div>
 
         </div>
