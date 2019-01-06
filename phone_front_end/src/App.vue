@@ -1,13 +1,14 @@
 <template>
     <div id="app">
         <div class="header">
+            <div class="header_more">
+                <img src="/static/img/more.png" alt="">
+            </div>
             <div class="header_name">
                 <p>天津维诺智创</p>
                 <p>Technology</p>
             </div>
-            <div class="header_more">
-                <img src="/static/img/more.png" alt="">
-            </div>
+
         </div>
         <div style="height: 80px; background-color: #ffffff"></div>
         <router-view/>
@@ -62,6 +63,7 @@
     .header_name {
         margin: 15px;
         flex: 6;
+        text-align: right;
     }
 
     .header_name p {
@@ -72,7 +74,6 @@
     .header_more {
         margin: 15px;
         flex: 1;
-        text-align: right;
     }
 
     .header_more img {
