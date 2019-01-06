@@ -146,36 +146,36 @@
             <router-link class="tag" to="/about">关于</router-link>
             <div class="hr"></div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #ea4c57">
+                <div style="flex: 1; background-color: #ea4c57; margin: 2px;">
                     <router-link class="about_link" to="/about/Introduction">
                         <p>公司介绍</p>
                     </router-link>
                 </div>
-                <div style="flex: 1; background-color: #4894f8">
+                <div style="flex: 1; background-color: #4894f8; margin: 2px;">
                     <router-link class="about_link" to="/about/Business">
                         <p>核心业务</p>
                     </router-link>
                 </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #f894f8">
+                <div style="flex: 1; background-color: #f894f8; margin: 2px;">
                     <router-link class="about_link" to="/about/Idea">
                         <p>公司理念</p>
                     </router-link>
                 </div>
-                <div style="flex: 1; background-color: #7ae55d">
+                <div style="flex: 1; background-color: #7ae55d; margin: 2px;">
                     <router-link class="about_link" to="/about/Pattern">
                         <p>经营模式</p>
                     </router-link>
                 </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #dad656">
+                <div style="flex: 1; background-color: #dad656; margin: 2px;">
                     <router-link class="about_link" to="/about/Advantage">
                         <p>团队优势</p>
                     </router-link>
                 </div>
-                <div style="flex: 1; background-color: #f4aa3c">
+                <div style="flex: 1; background-color: #f4aa3c; margin: 2px;">
                     <router-link class="about_link" to="/about/Advantage">
                         <p>奖项证书</p>
                     </router-link>
@@ -352,5 +352,12 @@
         display: flex;
         padding: 0 15px;
         height: 150px;
+    }
+
+    .about_link {
+        color: #FFFFFF;
+        text-decoration: none;
+        line-height: 130px;
+        font-weight: bold;
     }
 </style>
