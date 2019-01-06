@@ -3,10 +3,22 @@ import Router from 'vue-router'
 import WeinuoHome from '@/components/WeinuoHome'
 import Service from '@/components//service'
 import Programme from '@/components/programme'
+
 import Industry from '@/components/industry'
+import Agriculture from '@/components/industry/Agriculture'
+import Medical from '@/components/industry/Medical'
+import Government from '@/components/industry/Government'
+import Culture from '@/components/industry/Culture'
+import Cosmetology from '@/components/industry/Cosmetology'
+import RealEstate from '@/components/industry/RealEstate'
+import Environment from '@/components/industry/Environment'
+import Furniture from '@/components/industry/Furniture'
+
+
 import Case from '@/components/case'
-import About from '@/components/about'
 import CaseFirst from '@/components/case/CaseFirst'
+import About from '@/components/about'
+
 
 Vue.use(Router)
 
@@ -40,7 +52,38 @@ export default new Router({
             path: '/case/CaseFirst',
             name: 'CaseFirst',
             component: CaseFirst
+        }, {
+            path: '/industry/Agriculture',
+            name: 'Agriculture',
+            component: Agriculture
+        }, {
+            path: '/industry/Medical',
+            name: 'Medical',
+            component: Medical
+        }, {
+            path: '/industry/Government',
+            name: 'Government',
+            component: Government
+        }, {
+            path: '/industry/Culture',
+            name: 'Culture',
+            component: Culture
+        }, {
+            path: '/industry/Cosmetology',
+            name: 'Cosmetology',
+            component: Cosmetology
+        }, {
+            path: '/industry/RealEstate',
+            name: 'RealEstate',
+            component: RealEstate
+        }, {
+            path: '/industry/Environment',
+            name: 'Environment',
+            component: Environment
+        }, {
+            path: '/industry/Furniture',
+            name: 'Furniture',
+            component: Furniture
         },
-
     ]
 })
