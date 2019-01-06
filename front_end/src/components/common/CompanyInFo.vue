@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <div class="footer">
-            <div class="footer_head">
+            <div class="footer_top">
                 <b></b>
             </div>
-            <div class="footer_body">
+            <div class="footer_mid">
                 <div class="footer_one">
                     <span class="footer_heading">1</span>
                     <div class="footer_menu">
                         <ul class="menu">
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">1</router-link>
+                                <router-link to="CompanyInFo" id="click" @mouseover="onOver($event)"  @mouseout="onOut" :style="active">1</router-link>
                             </li>
                             <li class="menu-item">
                                 <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
@@ -55,8 +55,20 @@
                 </div>
             </div>
             <div class="footer_bot">
-                <span></span>
-                <div></div>
+                <p class="end-head">1</p>
+                <div>
+                    <ul class="footer_end">
+                        <li class="end-item">
+                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">1</router-link>
+                        </li>
+                        <li class="end-item">
+                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
+                        </li>
+                        <li class="end-item3">
+                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">3</router-link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -65,6 +77,7 @@
 <script>
     export default {
         name: "CompanyInFo",
+        el: '#app',
         data () {
             return {
                 active: ''
@@ -72,13 +85,15 @@
         },
 
         methods: {
-            onOver: function() {
+            onOver(e) {
                 console.log('mouse enter');
+                // e.style.backgroundColor = 'color: red';
                 this.active = 'color: red';
+
             },
             onOut: function() {
                 console.log('mouse out');
-                this.active = 'color: red';
+                this.active = 'color: white';
             }
         }
     }
@@ -91,7 +106,7 @@
     bottom: 0;
     left: 0;
 }
-.footer_head{
+.footer_top{
     height: 80px;
     background-color: #181D23;
     border-bottom: 1px solid #3e4247;
@@ -100,13 +115,21 @@
     text-align: center;
     font-size: 18px;
 }
-.footer_body {
+.footer_mid {
     height: 250px;
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
     bottom: 0;
     background-color: #181D23;
+    color: white;
+}
+.footer_bot {
+    height: 80px;
+    background-color: #181D23;
+    border-top: 1px solid #3e4247;
+    padding: 20px 0;
+    text-align: center;
     color: white;
 }
 .footer_one {
@@ -136,14 +159,28 @@
     color: #3e4247;
     font-size: 12px;
 }
-.footer_bot {
-    height: 100px;
-    background-color: #181D23;
-    border-top: 1px solid #3e4247;
-    padding: 20px 0;
-}
 #click {
     text-decoration: none;
     color: white;
+}
+.end-head{
+    margin-top: 0;
+}
+.footer_end {
+    margin: 0;
+    padding-left: 0;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    font-size: 12px;
+}
+.end-item {
+    width: 10%;
+    border-right: 1px solid #3e4247;
+}
+.end-item3 {
+    width: 10%;
 }
 </style>
