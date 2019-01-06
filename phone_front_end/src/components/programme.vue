@@ -1,54 +1,48 @@
 <template>
     <div>
-    <!--<div class="program_area">-->
-        <!--<div class="section_title">-->
-            <!--<h3>方案</h3>-->
-        <!--</div>-->
-<!--<div class="container">-->
-    <!--<table class="myselution-list" width="100%">-->
-        <!--<tbody><tr>-->
-            <!--<td class="mltd mltd1" rowspan="2" colspan="1">-->
-                <!--<h2 class="mlname mlname1"><a href="/selution_show.aspx?id=174">企业应用</a></h2>-->
-                <!--<div class="mlimg mlimg1">-->
-                    <!--<span class="icon icon-cloud"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-            <!--<td class="mltd mltd2" colspan="2" rowspan="1">-->
-                <!--<h2 class="mlname mlname2"><a href="/selution_show.aspx?id=175">移动应用</a></h2>-->
-                <!--<div class="mlimg mlimg2">-->
-                    <!--<span class="icon icon-phone"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-            <!--<td class="mltd mltd3" colspan="2" rowspan="1">-->
-                <!--<h2 class="mlname mlname3"><a href="/selution_show.aspx?id=177">运营平台</a></h2>-->
-                <!--<div class="mlimg mlimg3">-->
-                    <!--<span class="icon icon-laptop"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-        <!--</tr>-->
-        <!--<tr>-->
-            <!--<td class="mltd mltd4" rowspan="1" colspan="1">-->
-                <!--<h2 class="mlname mlname4"><a href="/selution_show.aspx?id=176">电子商务</a></h2>-->
-                <!--<div class="mlimg mlimg4">-->
-                    <!--<span class="icon icon-shopping-bag"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-            <!--<td class="mltd mltd5" colspan="2" rowspan="1">-->
-                <!--<h2 class="mlname mlname5"><a href="/selution_show.aspx?id=178">客户关系管理</a></h2>-->
-                <!--<div class="mlimg mlimg5">-->
-                    <!--<span class="icon icon-user"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-            <!--<td class="mltd mltd6" rowspan="12" colspan="1">-->
-                <!--<h2 class="mlname mlname6"><a href="/selution_show.aspx?id=179">生产管理</a></h2>-->
-                <!--<div class="mlimg mlimg6">-->
-                    <!--<span class="icon icon-brightness"></span>-->
-                <!--</div>-->
-            <!--</td>-->
-        <!--</tr>-->
-        <!--</tbody></table>-->
-    <!--</div>-->
-    <!--</div>-->
+    <div class="service_header">
+        <div style="font-weight: bold; font-size: 35px;">服务方案</div>
+        <div style="font-weight: bold;">我们以技术服务为核心业务，并在此基础上提供行业应用软件等一系列信息服务。</div>
+    </div>
+    <div class="content">
+        <div class="content_m" style="background-color: #cc8846;">
+            <div class="s_img">
+                <img src="/static/img/qiye.png" alt="">
+            </div>
+            <p>企业应用</p>
+        </div>
+        <div class="content_m" style="background-color: #dad656;">
+            <div class="s_img">
+                <img src="/static/img/yidong.png" alt="">
+            </div>
+            <p>移动应用</p>
+        </div>
+        <div class="content_m" style="background-color: #76d251;">
+            <div class="s_img">
+                <img src="/static/img/yunyin.png" alt="">
+            </div>
+            <p>运营平台</p>
+        </div>
+        <div class="content_m" style="background-color: #5941d0;">
+            <div class="s_img">
+                <img src="/static/img/shangwu.png" alt="">
+            </div>
+            <p>电子商务</p>
+        </div>
+        <div class="content_m" style="background-color: #d2433f;">
+            <div class="s_img">
+                <img src="/static/img/kehu.png" alt="">
+            </div>
+            <p>客户关系</p>
+        </div>
+        <div class="content_m" style="background-color: #437cd2;">
+            <div class="s_img">
+                <img src="/static/img/shengchan.png" alt="">
+            </div>
+            <p>生产管理</p>
+        </div>
+    </div>
+    <div style="height: 30px"></div>
     </div>
 </template>
 
@@ -59,33 +53,38 @@
 </script>
 
 <style scoped>
-    table.myselution-list {
-        border-collapse: separate;
-        border-spacing: 2px;
+    .service_header {
+        padding: 0 15px;
     }
-    table {
-        background-color: transparent;
-    }
-    .section_title {
-        height: 3em;
+
+    .content {
         text-align: center;
+        margin-top: 20px;
     }
-    .program_area {
-        height: 344px;
-        background-color: #666600;
+
+    .content_m {
+        width: 92%;
+        margin: 3px auto;
+        padding: 10px 0;
     }
-    .program_area h3 {
-        font-size: 2em;
-        height: 0.5em;
-        margin: 1em auto;
-        top: 1em;
-        position: relative;
+
+    .content img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
     }
-    .container {
-        max-width: 117em;
-        padding-right: 1.5em;
-        padding-left: 1.5em;
-        margin-right: auto;
-        margin-left: auto;
+
+    .s_img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: #FFFFFF solid 3px;
     }
+
+    .content p {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
 </style>

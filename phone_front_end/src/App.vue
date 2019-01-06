@@ -192,4 +192,19 @@
         opacity: 0.5;
     }
 
+    .el-collapse-item__header {
+        color: #ffffff;
+        font-size: 18px;
+        background-color: #5e5e5e;
+    }
+
+    .el-collapse-item__content {
+        padding-bottom: 20px;
+    }
+
+    .el-collapse-item__wrap {
+        background-color: #5e5e5e;
+        border: none;
+        font-size: 16px;
+    }
 </style>
