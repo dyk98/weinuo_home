@@ -69,11 +69,11 @@
             <p style="text-align: center;">导航栏</p>
             <hr>
             <div class="navigation">
-                <p>服务</p>
-                <p>方案</p>
-                <p>行业</p>
-                <p>案例</p>
-                <p>关于</p>
+                <router-link class="tag" to="/service"><P>服务</P></router-link>
+                <router-link class="tag" to="/programme"><p>方案</p></router-link>
+                <router-link class="tag" to="/components/industry"><p>行业</p></router-link>
+                <router-link class="tag" to="/case"><p>案例</p></router-link>
+                <router-link class="tag" to="/components/about"><p>关于</p></router-link>
             </div>
             <hr>
             <div class="contact">
