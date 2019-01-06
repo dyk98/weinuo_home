@@ -2,15 +2,63 @@
     <div id="app">
         <div class="header">
             <div class="header_more">
-                <img src="/static/img/more.png" alt="">
+                <img src="/static/img/more.png" alt="" @click="bar()">
             </div>
             <div class="header_name">
                 <p>天津维诺智创</p>
                 <p>Technology</p>
             </div>
-
         </div>
         <div style="height: 80px; background-color: #ffffff"></div>
+        <div class="navigation_bar" v-if="seen">
+            <el-collapse  v-model="activeName" accordion>
+                <el-collapse-item title="服务" name="0">
+                    <div class="navigation_bar_p">软件开发</div>
+                    <div class="navigation_bar_p">交互体验</div>
+                    <div class="navigation_bar_p">运营维护</div>
+                    <div class="navigation_bar_p">资源配置</div>
+                    <div class="navigation_bar_p">质量管理</div>
+                </el-collapse-item>
+                <el-collapse-item class="navigation_bar_p" title="方案" name="2">
+                    <div class="navigation_bar_p">企业应用</div>
+                    <div class="navigation_bar_p">移动应用</div>
+                    <div class="navigation_bar_p">运营平台</div>
+                    <div class="navigation_bar_p">电子商务</div>
+                    <div class="navigation_bar_p">客户关系</div>
+                    <div class="navigation_bar_p">生产管理</div>
+                </el-collapse-item>
+                <el-collapse-item class="navigation_bar_p" title="行业" name="3">
+                    <div class="navigation_bar_p">医疗</div>
+                    <div class="navigation_bar_p">政府</div>
+                    <div class="navigation_bar_p">农业</div>
+                    <div class="navigation_bar_p">文化</div>
+                    <div class="navigation_bar_p">美容</div>
+                    <div class="navigation_bar_p">旅游</div>
+                    <div class="navigation_bar_p">地产</div>
+                    <div class="navigation_bar_p">环保</div>
+                    <div class="navigation_bar_p">家具</div>
+                </el-collapse-item>
+                <el-collapse-item class="navigation_bar_p" title="案例" name="4">
+                    <div class="navigation_bar_p">案例一</div>
+                    <div class="navigation_bar_p">案例二</div>
+                </el-collapse-item>
+                <el-collapse-item class="navigation_bar_p" title="关于" name="5">
+                    <div class="navigation_bar_p">公司历史</div>
+                    <div class="navigation_bar_p">核心业务</div>
+                    <div class="navigation_bar_p">公司理念</div>
+                    <div class="navigation_bar_p">经营模式</div>
+                    <div class="navigation_bar_p">团队优势</div>
+                    <div class="navigation_bar_p">奖项证书</div>
+
+                </el-collapse-item>
+
+            </el-collapse>
+
+            <div>
+                <p>地址：天津市西青区XXXXX</p>
+                <p>联系方式：XXXXX</p>
+            </div>
+        </div>
         <router-view/>
 
         <div class="footer">
@@ -37,8 +85,30 @@
 </template>
 
 <script>
+    var see = false;
     export default {
-        name: 'App'
+        name: 'App',
+        data() {
+            return {
+                activeName: '1',
+                seen: see,
+            };
+        },
+
+        methods:{
+            bar(){
+                if(see === false) {
+                    see = true
+                    this.seen = true
+                }else {
+                    see = false
+                    this.seen = false
+                }
+                console.log(this.seen);
+                console.log(see)
+            }
+        }
+
     }
 </script>
 
@@ -52,7 +122,7 @@
 
     .header {
         height: 70px;
-        background: #595959;
+        background: #5e5e5e;
         display: flex;
         top: 0;
         position: fixed;
@@ -82,8 +152,23 @@
         height: 30px;
     }
 
+    .navigation_bar {
+        position: fixed;
+        z-index: 999;
+        width: 40%;
+        padding: 15px;
+        background-color: #5e5e5e;
+        margin-top: -10px;
+        height: 100%;
+    }
+
+    .navigation_bar_p {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
     .footer {
-        background: #595959;
+        background: #5e5e5e;
         color: #ffffff;
         padding-top: 20px;
         padding-bottom: 5px;
