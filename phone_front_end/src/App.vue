@@ -9,7 +9,7 @@
                 <img src="/static/img/more.png" alt="">
             </div>
         </div>
-
+        <div style="height: 70px; background-color: #ffffff"></div>
         <router-view/>
 
         <div class="footer">
@@ -50,13 +50,16 @@
     }
 
     .header {
-        padding: 15px;
-        height: 40px;
+        height: 70px;
         background: #595959;
         display: flex;
+        top: 0;
+        position: fixed;
+        width: 100%;
     }
 
     .header_name {
+        margin: 15px;
         flex: 6;
     }
 
@@ -66,6 +69,7 @@
     }
 
     .header_more {
+        margin: 15px;
         flex: 1;
         text-align: right;
     }

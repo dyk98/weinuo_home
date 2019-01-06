@@ -3,7 +3,7 @@
         <div class="section_title">
             <h3>关于</h3>
         </div>
-       
+
     </div>
 </template>
 
