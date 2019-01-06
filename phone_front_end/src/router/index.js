@@ -13,7 +13,7 @@ import Cosmetology from '@/components/industry/Cosmetology'
 import RealEstate from '@/components/industry/RealEstate'
 import Environment from '@/components/industry/Environment'
 import Furniture from '@/components/industry/Furniture'
-
+import Tourism from '@/components/industry/Tourism'
 
 import Case from '@/components/case'
 import CaseFirst from '@/components/case/CaseFirst'
@@ -84,6 +84,10 @@ export default new Router({
             path: '/industry/Furniture',
             name: 'Furniture',
             component: Furniture
+        }, {
+            path: '/industry/Tourism',
+            name: 'Tourism',
+            component: Tourism
         },
     ]
 })

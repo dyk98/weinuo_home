@@ -34,29 +34,29 @@
             <router-link class="tag" to="/programme">方案</router-link>
             <div class="hr"></div>
             <div class="programme_icon">
-                <div style="background-color: #cc8846; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #cc8846;">
                     <img src="/static/img/qiye.png" alt="">
                     <p>企业应用</p>
                 </div>
-                <div style="background-color: #dad656; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #dad656;">
                     <img src="/static/img/yidong.png" alt="">
                     <p>移动应用</p>
                 </div>
-                <div style="background-color: #76d251; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #76d251;">
                     <img src="/static/img/yunyin.png" alt="">
                     <p>运营平台</p>
                 </div>
             </div>
             <div class="programme_icon">
-                <div style="background-color: #5941d0; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #5941d0;">
                     <img src="/static/img/shangwu.png" alt="">
                     <p>电子商务</p>
                 </div>
-                <div style="background-color: #d2433f; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #d2433f;">
                     <img src="/static/img/kehu.png" alt="">
                     <p>客户关系</p>
                 </div>
-                <div style="background-color: #437cd2; flex: 1; margin: 1.5px">
+                <div class="programme_icon_m" style="background-color: #437cd2;">
                     <img src="/static/img/shengchan.png" alt="">
                     <p>生产管理</p>
                 </div>
@@ -67,28 +67,53 @@
         <div class="industry">
             <router-link class="tag" to="/industry">行业</router-link>
             <div class="hr"></div>
-            <div class="service_icon">
-                <div>
-                    <img src="/static/img/ruanjian.png" alt="">
-                    <p>软件开发</p>
-                </div>
-                <div>
-                    <img src="/static/img/jiaohu.png" alt="">
-                    <p>交互体验</p>
-                </div>
-                <div>
-                    <img src="/static/img/yunwei.png" alt="">
-                    <p>运营维护</p>
-                </div>
-                <div>
-                    <img src="/static/img/ziyuan.png" alt="">
-                    <p>资源配置</p>
-                </div>
-                <div>
-                    <img src="/static/img/zhiliang.png" alt="">
-                    <p>质量管理</p>
-                </div>
+            <div class="industry_icon">
+                <router-link class="industry_icon_m" style=" background-color: #f894f8;" to="/industry/Medical">
+                    <img src="/static/img/yiliao.png" alt="">
+                    <p>医疗</p>
+                </router-link>
 
+                <router-link class="industry_icon_m" style="background-color: #4894f8;" to="/industry/Government">
+                    <img src="/static/img/zhengfu.png" alt="">
+                    <p>政府</p>
+                </router-link>
+
+                <router-link class="industry_icon_m" style="background-color: #dad656;" to="/industry/Agriculture">
+                    <img src="/static/img/nongye.png" alt="">
+                    <p>农业</p>
+                </router-link>
+            </div>
+            <div class="industry_icon">
+                <router-link class="industry_icon_m" style="background-color: #f4aa3c;" to="/industry/Culture">
+                    <img src="/static/img/wenhua.png" alt="">
+                    <p>文化</p>
+                </router-link>
+
+                <router-link class="industry_icon_m" style="background-color: #ea4c57;" to="/industry/Cosmetology">
+                    <img src="/static/img/meirong.png" alt="">
+                    <p>美容</p>
+                </router-link>
+
+                <router-link class="industry_icon_m" style="background-color: #5941d0;" to="/industry/Tourism">
+                    <img src="/static/img/lvyou.png" alt="">
+                    <p>旅游</p>
+                </router-link>
+            </div>
+            <div class="industry_icon">
+                <router-link class="industry_icon_m" style="background-color: #985bd2;" to="/industry/RealEstate">
+                    <img src="/static/img/fangchan.png" alt="">
+                    <p>地产</p>
+                </router-link>
+
+                <router-link class="industry_icon_m" style="background-color: #74d2a2;" to="/industry/Environment">
+                    <img src="/static/img/huanbao.png" alt="">
+                    <p>环保</p>
+                </router-link>
+
+                <router-link class="industry_icon_m" style="background-color: #d29e7d;" to="/industry/Furniture">
+                    <img src="/static/img/jiaju.png" alt="">
+                    <p>家具</p>
+                </router-link>
             </div>
         </div>
 
@@ -213,13 +238,6 @@
         background-color: #f5f5f5;
     }
 
-    .industry {
-        text-align: center;
-        height: 200px;
-        padding-top: 45px;
-        background-color: #ffffff;
-    }
-
     .case {
         text-align: center;
         height: 200px;
@@ -239,6 +257,11 @@
         padding: 0 15px;
     }
 
+    .programme_icon_m {
+        flex: 1;
+        margin: 1.5px;
+    }
+
     .programme_icon img {
         width: 55px;
         height: 55px;
@@ -249,5 +272,42 @@
         font-size: 16px;
         margin-top: 0;
         color: #ffffff;
+        font-weight: bold;
+    }
+
+
+    .industry {
+        text-align: center;
+        height: 400px;
+        padding-top: 45px;
+        background-color: #ffffff;
+    }
+
+    .industry_icon {
+        display: flex;
+        padding: 0 15px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .industry_icon img {
+        width: 55px;
+        height: 55px;
+        margin-top: 10px;
+    }
+
+    .industry_icon p {
+        font-size: 18px;
+        margin-top: 0;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .industry_icon_m {
+        display: flex;
+        flex: 1;
+        margin: 1.5px;
+        justify-content: space-around;
+        text-decoration: none;
     }
 </style>

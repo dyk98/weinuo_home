@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <p>医疗</p>
-    </div>
+    
 </template>
 
 <script>
     export default {
-        name: "Medical"
+        name: "Tourism"
     }
 </script>
 
