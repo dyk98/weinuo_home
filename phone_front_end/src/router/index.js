@@ -20,6 +20,7 @@ import CaseFirst from '@/components/case/CaseFirst'
 import About from '@/components/about'
 
 
+
 Vue.use(Router)
 
 export default new Router({

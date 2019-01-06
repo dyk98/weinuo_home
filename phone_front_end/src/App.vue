@@ -9,7 +9,7 @@
                 <img src="/static/img/more.png" alt="">
             </div>
         </div>
-        <div style="height: 70px; background-color: #ffffff"></div>
+        <div style="height: 80px; background-color: #ffffff"></div>
         <router-view/>
 
         <div class="footer">
@@ -56,6 +56,7 @@
         top: 0;
         position: fixed;
         width: 100%;
+        z-index: 999;
     }
 
     .header_name {

@@ -1,5 +1,15 @@
 <template>
     <div class="all">
+        <!--动态-->
+        <div style="width: 95%; margin:0 auto">
+        <div class="swiper-container0">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-color: #ea4c57; width: 200px">Slide 1</div>
+                <div class="swiper-slide" style="background-color: #00AEFF; width: 200px">Slide 2</div>
+                <div class="swiper-slide" style="background-color: #f894f8; width: 200px">Slide 3</div>
+            </div>
+        </div>
+        </div>
         <!--服务-->
         <div class="service">
             <router-link class="tag" to="/service">服务</router-link>
@@ -121,28 +131,13 @@
         <div class="case">
             <router-link class="tag" to="/case">案例</router-link>
             <div class="hr"></div>
-            <div class="service_icon">
-                <div>
-                    <img src="/static/img/ruanjian.png" alt="">
-                    <p>软件开发</p>
-                </div>
-                <div>
-                    <img src="/static/img/jiaohu.png" alt="">
-                    <p>交互体验</p>
-                </div>
-                <div>
-                    <img src="/static/img/yunwei.png" alt="">
-                    <p>运营维护</p>
-                </div>
-                <div>
-                    <img src="/static/img/ziyuan.png" alt="">
-                    <p>资源配置</p>
-                </div>
-                <div>
-                    <img src="/static/img/zhiliang.png" alt="">
-                    <p>质量管理</p>
-                </div>
 
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-color: #ea4c57; width: 200px">Slide 1</div>
+                    <div class="swiper-slide" style="background-color: #00AEFF; width: 200px">Slide 2</div>
+                    <div class="swiper-slide" style="background-color: #f894f8; width: 200px">Slide 3</div>
+                </div>
             </div>
         </div>
 
@@ -150,29 +145,19 @@
         <div class="about">
             <router-link class="tag" to="/about">关于</router-link>
             <div class="hr"></div>
-            <div class="service_icon">
-                <div>
-                    <img src="/static/img/ruanjian.png" alt="">
-                    <p>软件开发</p>
-                </div>
-                <div>
-                    <img src="/static/img/jiaohu.png" alt="">
-                    <p>交互体验</p>
-                </div>
-                <div>
-                    <img src="/static/img/yunwei.png" alt="">
-                    <p>运营维护</p>
-                </div>
-                <div>
-                    <img src="/static/img/ziyuan.png" alt="">
-                    <p>资源配置</p>
-                </div>
-                <div>
-                    <img src="/static/img/zhiliang.png" alt="">
-                    <p>质量管理</p>
-                </div>
-
+            <div class="about_m">
+                <div style="flex: 1; background-color: #ea4c57">公司历史</div>
+                <div style="flex: 1; background-color: #4894f8">核心业务</div>
             </div>
+            <div class="about_m">
+                <div style="flex: 1; background-color: #f894f8">公司理念</div>
+                <div style="flex: 1; background-color: #7ae55d">经营模式</div>
+            </div>
+            <div class="about_m">
+                <div style="flex: 1; background-color: #dad656">团队优势</div>
+                <div style="flex: 1; background-color: #f4aa3c">奖项证书</div>
+            </div>
+
         </div>
 
 
@@ -180,10 +165,29 @@
 </template>
 
 <script>
+    import Swiper from 'swiper'
+    import 'swiper/dist/css/swiper.min.css';
+
     export default {
         name: 'WeinuoHome',
         data() {
             return {}
+        },
+        mounted(){
+            var mySwiper0 = new Swiper ('.swiper-container0', {
+                loop: true,
+                autoplay: true,
+                effect : 'fade',
+
+            })
+
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                autoplay: true,
+                effect : 'cube',
+
+            });
+
         }
     }
 </script>
@@ -192,6 +196,10 @@
 <style scoped>
     .all {
         text-align: center;
+    }
+
+    .swiper-container0 {
+        height: 200px;
     }
 
     .service {
@@ -238,20 +246,6 @@
         background-color: #f5f5f5;
     }
 
-    .case {
-        text-align: center;
-        height: 200px;
-        padding-top: 45px;
-        background-color: #f5f5f5;
-    }
-
-    .about {
-        text-align: center;
-        height: 200px;
-        padding-top: 45px;
-        background-color: #ffffff;
-    }
-
     .programme_icon {
         display: flex;
         padding: 0 15px;
@@ -278,7 +272,7 @@
 
     .industry {
         text-align: center;
-        height: 400px;
+        height: 340px;
         padding-top: 45px;
         background-color: #ffffff;
     }
@@ -309,5 +303,30 @@
         margin: 1.5px;
         justify-content: space-around;
         text-decoration: none;
+    }
+
+    .case {
+        text-align: center;
+        height: 285px;
+        padding-top: 45px;
+        background-color: #f5f5f5;
+    }
+
+    .swiper-container {
+        height: 200px;
+        width: 100%;
+    }
+
+    .about {
+        text-align: center;
+        height: 560px;
+        padding-top: 45px;
+        background-color: #ffffff;
+    }
+
+    .about_m {
+        display: flex;
+        padding: 0 15px;
+        height: 150px;
     }
 </style>
