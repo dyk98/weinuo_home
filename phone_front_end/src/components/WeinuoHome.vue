@@ -175,13 +175,8 @@
                         <p>团队优势</p>
                     </router-link>
                 </div>
-<<<<<<< HEAD
                 <div style="flex: 1; background-color: #f4aa3c">
                     <router-link class="about_link" to="/about/Prize">
-=======
-                <div style="flex: 1; background-color: #f4aa3c; margin: 2px;">
-                    <router-link class="about_link" to="/about/Advantage">
->>>>>>> 84bb047ac6830b91ba6409b86f7938fa25152759
                         <p>奖项证书</p>
                     </router-link>
                 </div>
