@@ -23,7 +23,7 @@
 
 <script>
     export default {
-        name: "History"
+        name: "Introduction"
     }
 </script>
 
