@@ -1,5 +1,8 @@
 <template>
-    $END$
+    <div>
+        <MyHeader></MyHeader>
+        <router-link to="/home/industry">行业</router-link>
+    </div>
 </template>
 
 <script>
