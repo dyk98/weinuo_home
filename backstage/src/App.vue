@@ -1,27 +1,46 @@
 <template>
     <div id="app">
+
         <div class="head" >
+
             <div class="top_bar">
                 <h3>维诺智创后台管理系统</h3>
             </div>
             <div class="left_bar">
                 <el-collapse-transition>
                     <div v-show="show3">
+                        <div style="color: grey; margin-bottom: 0.1em; font-weight: bold;text-align: left" @click="home">
+                            主页
+                        </div>
                         <el-collapse v-model="activeNames" accordion>
                             <el-collapse-item title="轮播图管理" name="1" class="section">
-                                <div class="section_list">动态轮播</div>
-                                <div class="section_list">案例轮播</div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>动态轮播</p></router-link>
+                                </div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>案例轮播</p></router-link>
+                                </div>
 
                             </el-collapse-item>
                             <el-collapse-item title="案例管理" name="2" class="section">
-                                <div class="section_list">服务案例</div>
-                                <div class="section_list">方案案例</div>
-                                <div class="section_list">行业案例</div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>服务案例</p></router-link>
+                                </div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>方案案例</p></router-link>
+                                </div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>行业案例</p></router-link>
+                                </div>
 
                             </el-collapse-item>
                             <el-collapse-item title="联系我们" name="3" class="section">
-                                <div class="section_list">地址修改</div>
-                                <div class="section_list">联系方式修改</div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>地址修改</p></router-link>
+                                </div>
+                                <div class="section_list">
+                                    <router-link class="link" to="/"><p>联系方式修改</p></router-link>
+                                </div>
 
                             </el-collapse-item>
                         </el-collapse>
@@ -30,9 +49,14 @@
                 </el-collapse-transition>
 
             </div>
+            <div class="foot_bar">
+                <p>天津维诺智创大数据公司</p>
+            </div>
         </div>
+
         <div style="height: 30px;"></div>
         <router-view/>
+
     </div>
 </template>
 
@@ -46,9 +70,9 @@
             };
         },
         methods: {
-            handleChange(val) {
-                console.log(val);
-            }
+            home() {
+                this.$router.push({path: '/'});
+            },
         }
 
     }
@@ -69,8 +93,14 @@
         position: fixed;
         width: 100%;
         top: 0;
+        height: 100%;
     }
-
+    .foot_bar {
+        margin: 0;
+        height: 45px;
+        background-color: #2f333d;
+        color: white;
+    }
     .top_bar {
         margin: 0;
         width: auto;
@@ -103,8 +133,24 @@
     }
 
     .el-collapse-item__wrap {
-        background-color: #ffffff;
+        background-color:  #eff5f8;
         border: none;
-        font-size: 16px;
+    }
+    .el-collapse-item__header :hover {
+        background-color: #eff5f8;
+    }
+    .section_list p:hover {
+        background-color: #7470e6;
+    }
+    .section_list p:active {
+        background-color: #7470e6;
+    }
+    .link {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: black;
+    }
+    .link :hover {
+        color: white;
     }
 </style>
