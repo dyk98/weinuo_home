@@ -189,6 +189,7 @@
 .end-head{
     color: #bdbcbc;
     margin-top: 0;
+    font-size: 14px;
 }
 .footer_end {
     margin: 0;
@@ -201,10 +202,10 @@
     font-size: 12px;
 }
 .end-item {
-    width: 10%;
+    width: 6%;
     border-right: 1px solid #3e4247;
 }
 .end-item5 {
-    width: 10%;
+    width: 6%;
 }
 </style>
