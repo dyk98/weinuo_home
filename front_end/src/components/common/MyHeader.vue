@@ -3,9 +3,12 @@
         <p class="companyName">天津维诺智通</p>
         <div class="headerTitle">
             <div class="headerSelect item1">
-                <router-link to="" class="headerSelectP">涉及行业</router-link>
+                <router-link to="" class="headerSelectP ">涉及行业</router-link>
                 <div class="mune q1">
+                    <div class="title">
                     <h3 class="muneTitle">涉及行业</h3>
+                    </div>
+                    <div class="mylist">
                     <ul class="muneList">
                         <li class="listItem"><router-link class="Item" to="">高科技</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">银行</router-link></li>
@@ -14,6 +17,9 @@
                         <li class="listItem"><router-link class="Item" to="">金融其他</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">制造</router-link></li>
                     </ul>
+                    </div>
+
+                    <div class="mylist">
                     <ul class="muneList">
                         <li class="listItem"><router-link class="Item" to="">电信</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">互联网</router-link></li>
@@ -22,66 +28,136 @@
                         <li class="listItem"><router-link class="Item" to="">旅游交通</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">政府和教育</router-link></li>
                     </ul>
+                    </div>
+
+                    <div class="mylist">
                     <ul class="muneList">
                         <li class="listItem"><router-link class="Item" to="">媒体娱乐</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">零售</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">人力资源管理</router-link></li>
                         <li class="listItem"><router-link class="Item" to="">AI人工智能</router-link></li>
                     </ul>
+                    </div>
                 </div>
             </div>
-            <div class="headerSelect">
+
+            <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">技术实施</router-link>
+                <div class="mune q1">
+                <div class="title">
+                    <h3 class="muneTitle">技术实施</h3>
+                </div>
+                    <div class="mylist">
+                    <ul class="muneList">
+                        <li class="listItem"><router-link class="Item" to="">应用开发+运维</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">内嵌式技术+IoT</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">数字化产品+平台研发</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">DevOps实施</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">CRM</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">ERP</router-link></li>
+                    </ul>
+                    </div>
+
+                    <div class="mylist">
+                    <ul class="muneList">
+                        <li class="listItem"><router-link class="Item" to="">Marketing Cloud</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">测试服务</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">大数据平台</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">产品化解决方案</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">HCM</router-link></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-            <div class="headerSelect">
-                <router-link to="" class="headerSelectP">数字营销</router-link>
+
+            <div class="headerSelect item1">
+            <router-link to="" class="headerSelectP">数字营销</router-link>
+            <div class="mune q1">
+                <div class="title">
+                    <h3 class="muneTitle">数字营销</h3>
+                </div>
+                <div class="mylist">
+                    <ul class="muneList">
+                        <li class="listItem"><router-link class="Item" to="">用户交互设计</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">内容管理解决方案</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">线上营销</router-link></li>
+                        <li class="listItem"><router-link class="Item" to="">全球化及本地化服务</router-link></li>
+                    </ul>
+                </div>
             </div>
-            <div class="headerSelect">
+        </div>
+
+            <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">咨询服务</router-link>
+                <div class="mune q1">
+                <div class="title">
+                    <h3 class="muneTitle">数字营销</h3>
+                </div>
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">数字化转型</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">信息服务生态建设</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">其他咨询服务</router-link></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="headerSelect">
+
+            <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">运营服务</router-link>
+                <div class="mune q1">
+                    <div class="title">
+                        <h3 class="muneTitle">运营服务</h3>
+                    </div>
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">大数据分析</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">商业智能</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">云基础设施管理</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">业务流程外包（BPO）</router-link></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="headerSelect">
-                <router-link to="" class="headerSelectP">就业机会</router-link>
+
+            <div class="headerSelect item1">
+                <router-link to="" class="headerSelectP">就职机会</router-link>
+                <div class="mune q1">
+                    <div class="title">
+                        <h3 class="muneTitle">就职机会</h3>
+                    </div>
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">薪酬福利</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">工作生活和谐</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">发展和职业机会</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">有意义的工作</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">令人鼓舞的工作环境</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">社会招聘</router-link></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="headerSelect">
+
+            <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">关于我们</router-link>
+                <div class="mune q1">
+                    <div class="title">
+                        <h3 class="muneTitle">关于我们</h3>
+                    </div>
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">我们的征程</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">我们的领导团队</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">我们的合作伙伴</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">荣誉及证书</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">企业社会责任</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">投资者</router-link></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-        <div class="mune">
-            <h3 class="muneTitle">技术实施</h3>
-            <ul class="muneList">
-                <li class="listItem"><router-link class="Item" to="">应用开发+运维</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">内嵌式技术+IoT</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">数字化产品+平台研发</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">DevOps实施</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">CRM</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">ERP</router-link></li>
-            </ul>
-            <ul class="muneList">
-                <li class="listItem"><router-link class="Item" to="">Marketing Cloud</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">测试服务</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">大数据平台</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">产品化解决方案</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">HCM</router-link></li>
-            </ul>
-        </div>
-
-        <div class="mune">
-            <h3 class="muneTitle">数字营销</h3>
-            <ul class="muneList">
-                <li class="listItem"><router-link class="Item" to="">用户交互设计</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">内嵌式技术+loT</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">内容管理解决方案</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">线上营销</router-link></li>
-                <li class="listItem"><router-link class="Item" to="">全球化及本地化服务</router-link></li>
-            </ul>
-        </div>
-
     </div>
 
 </template>
@@ -153,25 +229,16 @@
         font-size: 22px;
         margin-bottom: 0;
     }
-    .mune{
-        display: flex;
-        width: 90%;
-    }
+
     .listItem{
         list-style: none;
-        margin-top: 8px;
+        margin-top: -14px;
     }
-    .muneList{
-        flex-grow: 2;
-    }
-    .muneTitle{
-        flex-grow: 0.5;
-        margin-left:300px;
-    }
+
     .Item{
         text-decoration: none;
         color: #193c74;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: bold;
         border-left: 3px solid #e1e3e6;
     }
@@ -179,13 +246,22 @@
         color: #bd3135;
     }
 
+
+    .title{
+        flex-grow: 0.5;
+    }
+
+    .mylist{
+        flex-grow: 3;
+        margin-left:10px;
+    }
     .q1 {
         display: none;
-        position: relative;
+        position: absolute;
+        width: 1000px;
     }
 
     .item1:hover .q1 {
-        display: inline-block;
+        display: flex;
     }
-
 </style>
