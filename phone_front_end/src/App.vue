@@ -12,6 +12,7 @@
         <div style="height: 70px; background-color: #ffffff"></div>
         <el-collapse-transition>
             <div class="navigation_bar" v-show="show3">
+                <div style="flex: 2; padding: 5px 15px; background-color: #5e5e5e;">
                 <div style="font-size: 18px; color: #FFFFFF; margin-bottom: 5px; font-weight: bold" @click="home">主页
                 </div>
                 <el-collapse v-model="activeName" accordion>
@@ -61,7 +62,10 @@
                     <p>地址：天津市西青区XXXXX</p>
                     <p>联系方式：XXXXX</p>
                 </div>
+                </div>
+                <div style="flex: 3;opacity: 0" @click="off">我是打酱油的,xixi你看不见我</div>
             </div>
+
         </el-collapse-transition>
         <router-view/>
 
@@ -100,6 +104,9 @@
         methods: {
             home() {
                 this.$router.push({path: '/'});
+            },
+            off(){
+                this.show3 = false
             }
         }
     }
@@ -148,12 +155,12 @@
     .navigation_bar {
         position: fixed;
         z-index: 999;
-        width: 40%;
-        padding: 5px 15px;
-        background-color: #5e5e5e;
+        width: 100%;
         margin-top: -11px;
         height: 100%;
+        display: flex;
     }
+
 
     .navigation_bar_p {
         color: #FFFFFF;

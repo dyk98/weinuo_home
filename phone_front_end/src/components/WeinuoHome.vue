@@ -183,11 +183,11 @@
             return {
                 sliders: [
                     {
-                        img: '/static/img/slide1.png'
+                        img: '/static/img/slide3.png'
                     }, {
                         img: '/static/img/slide2.png'
                     }, {
-                        img: '/static/img/slide3.png'
+                        img: '/static/img/slide1.png'
                     },
                 ],
                 slides: [
