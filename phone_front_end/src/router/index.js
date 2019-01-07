@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import WeinuoHome from '@/components/WeinuoHome'
 import Service from '@/components//service'
 import Programme from '@/components/programme'
@@ -22,12 +23,12 @@ import About from '@/components/about'
 import Advantage from '@/components/about/Advantage'
 import Introduction from '@/components/about/Introduction'
 import Idea from '@/components/about/Idea'
-import Pattern from '@/components/about/Pattern'
+import ManagementModel from '@/components/about/ManagementModel'
 import Prize from '@/components/about/Prize'
 import Business from '@/components/about/Business'
 
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     routes: [
@@ -108,9 +109,9 @@ export default new Router({
             name: 'Idea',
             component: Idea
         }, {
-            path: '/about/Pattern',
-            name: 'Pattern',
-            component: Pattern
+            path: '/about/ManagementModel',
+            name: 'ManagementModel',
+            component: ManagementModel
         }, {
             path: '/about/Prize',
             name: 'Prize',

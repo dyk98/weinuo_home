@@ -71,9 +71,9 @@
             <div class="navigation">
                 <router-link class="foo" to="/service"><P>服务</P></router-link>
                 <router-link class="foo" to="/programme"><p>方案</p></router-link>
-                <router-link class="foo" to="/components/industry"><p>行业</p></router-link>
+                <router-link class="foo" to="/industry"><p>行业</p></router-link>
                 <router-link class="foo" to="/case"><p>案例</p></router-link>
-                <router-link class="foo" to="/components/about"><p>关于</p></router-link>
+                <router-link class="foo" to="/about"><p>关于</p></router-link>
             </div>
             <hr>
             <div class="contact">
