@@ -5,8 +5,13 @@
                 <img src="/static/img/more.png" alt="" @click="show3 = !show3">
             </div>
             <div class="header_name">
+                <div style="flex: 2">
+                    <img style="height: 50px;margin-left:65%;margin-top: -5px;" src="/static/img/logo.png" alt="">
+                </div>
+                <div style="flex: 1">
                 <p>天津维诺智创</p>
                 <p>Technology</p>
+                </div>
             </div>
         </div>
         <div style="height: 70px; background-color: #ffffff"></div>
@@ -133,12 +138,14 @@
     .header_name {
         margin: 15px;
         flex: 6;
-        text-align: right;
+        /*text-align: right;*/
+        display: flex;
     }
 
     .header_name p {
         margin: 0;
         color: #ffffff;
+        text-align: right;
     }
 
     .header_more {
