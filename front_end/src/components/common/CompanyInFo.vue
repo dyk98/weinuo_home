@@ -6,66 +6,87 @@
             </div>
             <div class="footer_mid">
                 <div class="footer_one">
-                    <span class="footer_heading">1</span>
+                    <p class="footer_heading">探索</p>
                     <div class="footer_menu">
                         <ul class="menu">
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver($event)"  @mouseout="onOut" :style="active">1</router-link>
+                                <router-link to="CompanyInFo" id="click">我们的领导团队</router-link>
                             </li>
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
+                                <router-link to="CompanyInFo" id="click">新闻</router-link>
                             </li>
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">3</router-link>
+                                <router-link to="CompanyInFo" id="click">职业机会</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">投资者</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">商业行为和道德准则</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">供应商商业行为与道德守则</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">文思海辉（Pactera）个人信息保护方针 | 文思海辉</router-link>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer_two">
-                    <span class="footer_heading">2</span>
+                    <p class="footer_heading">全球办公室</p>
                     <div class="footer_menu">
                         <ul class="menu">
                             <li class="menu-item">
-                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">1</router-link>
+                            <router-link to="CompanyInFo" id="click">大中华地区</router-link>
                             </li>
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
+                                <router-link to="CompanyInFo" id="click">亚太地区</router-link>
                             </li>
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">3</router-link>
+                                <router-link to="CompanyInFo" id="click">美洲</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">欧洲/中东/非洲</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">美洲</router-link>
+                            </li>
+                            <li class="menu-item">
+                                <router-link to="CompanyInFo" id="click">查看所有</router-link>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer_three">
-                    <span class="footer_heading">3</span>
+                    <p class="footer_heading">友情链接</p>
                     <div class="footer_menu">
                         <ul class="menu">
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">1</router-link>
-                            </li>
-                            <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
-                            </li>
-                            <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">3</router-link>
+                                <router-link to="CompanyInFo" id="click">文小包</router-link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer_bot">
-                <p class="end-head">1</p>
+                <p class="end-head">© 2019 天津维诺智通大数据科技有限公司 </p>
                 <div>
                     <ul class="footer_end">
                         <li class="end-item">
-                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">1</router-link>
+                            <router-link to="CompanyInFo" id="click">使用条款</router-link>
                         </li>
                         <li class="end-item">
-                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">2</router-link>
+                            <router-link to="CompanyInFo" id="click">隐私政策</router-link>
                         </li>
-                        <li class="end-item3">
-                            <router-link to="CompanyInFo" id="click" @mouseover="onOver"  @mouseout="onOut" :style="active">3</router-link>
+                        <li class="end-item">
+                            <router-link to="CompanyInFo" id="click">Cookies政策</router-link>
+                        </li>
+                        <li class="end-item">
+                        <router-link to="CompanyInFo" id="click">法律声明</router-link>
+                        </li>
+                        <li class="end-item5">
+                            <router-link to="CompanyInFo" id="click">网站地图</router-link>
                         </li>
                     </ul>
                 </div>
@@ -75,26 +96,19 @@
 </template>
 
 <script>
+    import company_info from "./CompanyInFo";
     export default {
         name: "CompanyInFo",
-        el: '#app',
+        components: {
+            company_info
+        },
         data () {
             return {
-                active: ''
+
             }
         },
-
         methods: {
-            onOver(e) {
-                console.log('mouse enter');
-                // e.style.backgroundColor = 'color: red';
-                this.active = 'color: red';
 
-            },
-            onOut: function() {
-                console.log('mouse out');
-                this.active = 'color: white';
-            }
         }
     }
 </script>
@@ -147,13 +161,19 @@
     padding: 25px;
 }
 .footer_heading {
-    margin-bottom: 22px;
+    margin-top: 0;
     font-size: 22px;
 }
 .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 0;
+    margin: 0;
 }
 .menu-item {
+    min-width: 40%;
+    display: inline-flex;
     list-style:none;
     padding: 11px 4px;
     color: #3e4247;
@@ -161,9 +181,13 @@
 }
 #click {
     text-decoration: none;
-    color: white;
+    color: #bdbcbc;
+}
+#click:hover {
+    color: #CE1B2E;
 }
 .end-head{
+    color: #bdbcbc;
     margin-top: 0;
 }
 .footer_end {
@@ -180,7 +204,7 @@
     width: 10%;
     border-right: 1px solid #3e4247;
 }
-.end-item3 {
+.end-item5 {
     width: 10%;
 }
 </style>

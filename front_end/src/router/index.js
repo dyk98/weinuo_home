@@ -12,10 +12,6 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: CompanyInFo
-    }, {
-      path: '/common',
-      name: 'CompanyInFo',
-      component: CompanyInFo
     }
   ]
 })
