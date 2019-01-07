@@ -69,11 +69,11 @@
             <p style="text-align: center;">导航栏</p>
             <hr>
             <div class="navigation">
-                <router-link class="tag" to="/service"><P>服务</P></router-link>
-                <router-link class="tag" to="/programme"><p>方案</p></router-link>
-                <router-link class="tag" to="/components/industry"><p>行业</p></router-link>
-                <router-link class="tag" to="/case"><p>案例</p></router-link>
-                <router-link class="tag" to="/components/about"><p>关于</p></router-link>
+                <router-link class="foo" to="/service"><P>服务</P></router-link>
+                <router-link class="foo" to="/programme"><p>方案</p></router-link>
+                <router-link class="foo" to="/components/industry"><p>行业</p></router-link>
+                <router-link class="foo" to="/case"><p>案例</p></router-link>
+                <router-link class="foo" to="/components/about"><p>关于</p></router-link>
             </div>
             <hr>
             <div class="contact">
@@ -192,4 +192,24 @@
         opacity: 0.5;
     }
 
+    .foo {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .el-collapse-item__header {
+        color: #ffffff;
+        font-size: 18px;
+        background-color: #5e5e5e;
+    }
+
+    .el-collapse-item__content {
+        padding-bottom: 20px;
+    }
+
+    .el-collapse-item__wrap {
+        background-color: #5e5e5e;
+        border: none;
+        font-size: 16px;
+    }
 </style>
