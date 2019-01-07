@@ -164,7 +164,7 @@
                     </router-link>
                 </div>
                 <div style="flex: 1; background-color: #7ae55d; margin: 2px;">
-                    <router-link class="about_link" to="/about/Pattern">
+                    <router-link class="about_link" to="/about/ManagementModel">
                         <p>经营模式</p>
                     </router-link>
                 </div>
@@ -176,7 +176,7 @@
                     </router-link>
                 </div>
                 <div style="flex: 1; background-color: #f4aa3c; margin: 2px;">
-                    <router-link class="about_link" to="/about/Advantage">
+                    <router-link class="about_link" to="/about/Prize">
                         <p>奖项证书</p>
                     </router-link>
                 </div>
