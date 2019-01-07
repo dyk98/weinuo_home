@@ -9,7 +9,7 @@
                 <i></i>
                 <div class="pagegrids-con imgs">
                     <div class="col-md-4 center">
-                        <img src="http://www.winlala.com/upload/201609/21/team.png">
+
                     </div>
                     <div class="col-md-8">
                         <div class="txt">
