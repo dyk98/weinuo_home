@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div id="app">
       <div class="top_bar">
           <h1>维诺智创后台管理系统</h1>
@@ -40,11 +40,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+    margin: 0;
+    padding: 0;
 }
   .top_bar {
+      margin: 0;
       width: auto;
       height: 20%;
       background-color: cornflowerblue;
+  }
+
+  .top_bar h1 {
+      margin: 0;
   }
     .left_bar {
         height: 100%;
