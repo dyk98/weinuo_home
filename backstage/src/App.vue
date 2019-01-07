@@ -5,13 +5,10 @@
             <div class="top_bar">
                 <h3>维诺智创后台管理系统</h3>
             </div>
-            <div class="foot_bar">
-                <p>天津维诺智创大数据公司</p>
-            </div>
             <div class="left_bar">
                 <el-collapse-transition>
                     <div v-show="show3">
-                        <div style="color: grey; margin-bottom: 0.1em; font-weight: bold;text-align: left" @click="home">
+                        <div style="color:#3c3f41; margin-bottom: 0.1em; font-weight: bold;text-align: left;font-size:18px;padding-left: 15px; " @click="home">
                             主页
                         </div>
                         <el-collapse v-model="activeNames" accordion>
@@ -56,7 +53,9 @@
 
         <div style="height: 30px;"></div>
         <router-view/>
-
+        <div class="foot_bar">
+            <p>天津维诺智创大数据公司</p>
+        </div>
     </div>
 </template>
 
@@ -94,17 +93,24 @@
         width: 100%;
         top: 0;
         height: 100%;
+        z-index: 999;
     }
+
+    .foot_bar p {
+        margin-left: 20%;
+        text-align: left;
+    }
+
     .foot_bar {
         margin: 0;
         width: 100%;
         height: 45px;
         background-color: #2f333d;
         color: white;
-        position: absolute;
-        z-index: 99;
-        top: 95%;
+        z-index: 999;
+        line-height: 45px;
     }
+
     .top_bar {
         margin: 0;
         width: auto;
@@ -123,12 +129,15 @@
         width: 15%;
         background-color: #ffffff;
         float: top;
+        border:1px solid #d5d9dd;
+
     }
 
     .el-collapse-item__header {
         color: #3c3f41;
         font-size: 18px;
         background-color: #ffffff;
+        padding-left: 15px;
     }
 
     .el-collapse-item__content {
