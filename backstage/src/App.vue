@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div style="position: fixed; width: 100%">
+        <div class="head" >
             <div class="top_bar">
                 <h3>维诺智创后台管理系统</h3>
             </div>
@@ -31,7 +31,7 @@
 
             </div>
         </div>
-        <div style="height: 45px;"></div>
+        <div style="height: 30px;"></div>
         <router-view/>
     </div>
 </template>
@@ -62,6 +62,13 @@
         text-align: center;
         margin: 0;
         padding: 0;
+        background-color: #eff5f8;
+    }
+
+    .head {
+        position: fixed;
+        width: 100%;
+        top: 0;
     }
 
     .top_bar {
@@ -79,7 +86,7 @@
 
     .left_bar {
         height: 100%;
-        width: 10em;
+        width: 15%;
         background-color: #ffffff;
         float: top;
     }
