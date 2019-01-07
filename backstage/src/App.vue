@@ -1,61 +1,103 @@
- <template>
-  <div id="app">
-      <div class="top_bar">
-          <h1>维诺智创后台管理系统</h1>
-      </div>
-      <div class="left_bar">
-          <el-collapse-transition>
-              <div class="navigation_bar" v-show="show3">
-                  <div style="flex: 2; padding: 5px 15px; background-color: #5e5e5e;">
-                      <div style="font-size: 18px; color: #FFFFFF; margin-bottom: 5px; font-weight: bold" @click="home">主页
-                      </div>
-                      <el-collapse v-model="activeName" accordion>
-                          <el-collapse-item title="服务" name="0">
-                              <div class="navigation_bar_p">软件开发</div>
-                              <div class="navigation_bar_p">交互体验</div>
-                              <div class="navigation_bar_p">运营维护</div>
-                              <div class="navigation_bar_p">资源配置</div>
-                              <div class="navigation_bar_p">质量管理</div>
-                          </el-collapse-item>
+<template>
+    <div id="app">
+        <div style="position: fixed; width: 100%">
+            <div class="top_bar">
+                <h3>维诺智创后台管理系统</h3>
+            </div>
+            <div class="left_bar">
+                <el-collapse-transition>
+                    <div v-show="show3">
+                        <el-collapse v-model="activeNames" accordion>
+                            <el-collapse-item title="轮播图管理" name="1" class="section">
+                                <div class="section_list">动态轮播</div>
+                                <div class="section_list">案例轮播</div>
 
-                      </el-collapse>
-                  </div>
-              </div>
+                            </el-collapse-item>
+                            <el-collapse-item title="案例管理" name="2" class="section">
+                                <div class="section_list">服务案例</div>
+                                <div class="section_list">方案案例</div>
+                                <div class="section_list">行业案例</div>
 
-          </el-collapse-transition>
-      </div>
-    <router-view/>
-  </div>
+                            </el-collapse-item>
+                            <el-collapse-item title="联系我们" name="3" class="section">
+                                <div class="section_list">地址修改</div>
+                                <div class="section_list">联系方式修改</div>
+
+                            </el-collapse-item>
+                        </el-collapse>
+
+                    </div>
+                </el-collapse-transition>
+
+            </div>
+        </div>
+        <div style="height: 45px;"></div>
+        <router-view/>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    export default {
+        name: 'App',
+        data() {
+            return {
+                activeNames: '0',
+                show3: true,
+            };
+        },
+        methods: {
+            handleChange(val) {
+                console.log(val);
+            }
+        }
+
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-    margin: 0;
-    padding: 0;
-}
-  .top_bar {
-      margin: 0;
-      width: auto;
-      height: 20%;
-      background-color: cornflowerblue;
-  }
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 
-  .top_bar h1 {
-      margin: 0;
-  }
+    .top_bar {
+        margin: 0;
+        width: auto;
+        height: 45px;
+        background-color: #2f333d;
+    }
+
+    .top_bar h3 {
+        margin: 0;
+        color: #ffffff;
+        line-height: 45px;
+    }
+
     .left_bar {
         height: 100%;
         width: 10em;
-        background-color: darkslateblue;
+        background-color: #ffffff;
+        float: top;
+    }
+
+    .el-collapse-item__header {
+        color: #3c3f41;
+        font-size: 18px;
+        background-color: #ffffff;
+    }
+
+    .el-collapse-item__content {
+        padding-bottom: 2em;
+        color: #3c3f41;
+    }
+
+    .el-collapse-item__wrap {
+        background-color: #ffffff;
+        border: none;
+        font-size: 16px;
     }
 </style>
