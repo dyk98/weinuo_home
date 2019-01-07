@@ -2,9 +2,11 @@
     <div id="app">
 
         <div class="head" >
-
             <div class="top_bar">
                 <h3>维诺智创后台管理系统</h3>
+            </div>
+            <div class="foot_bar">
+                <p>天津维诺智创大数据公司</p>
             </div>
             <div class="left_bar">
                 <el-collapse-transition>
@@ -49,9 +51,7 @@
                 </el-collapse-transition>
 
             </div>
-            <div class="foot_bar">
-                <p>天津维诺智创大数据公司</p>
-            </div>
+
         </div>
 
         <div style="height: 30px;"></div>
@@ -97,9 +97,13 @@
     }
     .foot_bar {
         margin: 0;
+        width: 100%;
         height: 45px;
         background-color: #2f333d;
         color: white;
+        position: absolute;
+        z-index: 99;
+        top: 95%;
     }
     .top_bar {
         margin: 0;
