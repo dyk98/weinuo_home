@@ -9,7 +9,7 @@
                 <p>Technology</p>
             </div>
         </div>
-        <div style="height: 80px; background-color: #ffffff"></div>
+        <div style="height: 70px; background-color: #ffffff"></div>
         <el-collapse-transition>
             <div class="navigation_bar" v-show="show3">
                 <div style="font-size: 18px; color: #FFFFFF; margin-bottom: 5px; font-weight: bold" @click="home">主页

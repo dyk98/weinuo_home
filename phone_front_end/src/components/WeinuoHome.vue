@@ -1,14 +1,14 @@
 <template>
     <div class="all">
         <!--动态-->
-        <div style="width: 95%; margin:0 auto">
-        <div class="swiper-container0">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-color: #ea4c57; width: 200px">Slide 1</div>
-                <div class="swiper-slide" style="background-color: #00AEFF; width: 200px">Slide 2</div>
-                <div class="swiper-slide" style="background-color: #f894f8; width: 200px">Slide 3</div>
+        <div style="width: 100%; margin:0 auto">
+            <div class="swiper-container0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" v-for="slider in sliders">
+                        <img :src="slider.img" alt="" style="width: 100%; height: 250px">
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
         <!--服务-->
         <div class="service">
@@ -133,10 +133,10 @@
             <div class="hr"></div>
 
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-color: #ea4c57; width: 200px">Slide 1</div>
-                    <div class="swiper-slide" style="background-color: #00AEFF; width: 200px">Slide 2</div>
-                    <div class="swiper-slide" style="background-color: #f894f8; width: 200px">Slide 3</div>
+                <div class="swiper-wrapper" style="width: 100%">
+                    <div class="swiper-slide" v-for="slide in slides">
+                        <img :src="slide.img" alt="" style="width: 100%; height: 250px">
+                    </div>
                 </div>
             </div>
         </div>
@@ -146,38 +146,23 @@
             <router-link class="tag" to="/about">关于</router-link>
             <div class="hr"></div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #ea4c57; margin: 2px;">
-                    <router-link class="about_link" to="/about/Introduction">
-                        <p>公司介绍</p>
-                    </router-link>
-                </div>
-                <div style="flex: 1; background-color: #4894f8; margin: 2px;">
-                    <router-link class="about_link" to="/about/Business">
-                        <p>核心业务</p>
+                <div style="flex: 1;margin: 2px;" v-for="item in we1">
+                    <router-link class="about_link" :to="item.path">
+                        <img style="width:100%" :src="item.img" alt="">
                     </router-link>
                 </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #f894f8; margin: 2px;">
-                    <router-link class="about_link" to="/about/Idea">
-                        <p>公司理念</p>
-                    </router-link>
-                </div>
-                <div style="flex: 1; background-color: #7ae55d; margin: 2px;">
-                    <router-link class="about_link" to="/about/Pattern">
-                        <p>经营模式</p>
+                <div style="flex: 1;margin: 2px;" v-for="item in we2">
+                    <router-link class="about_link" :to="item.path">
+                        <img style="width:100%" :src="item.img" alt="">
                     </router-link>
                 </div>
             </div>
             <div class="about_m">
-                <div style="flex: 1; background-color: #dad656; margin: 2px;">
-                    <router-link class="about_link" to="/about/Advantage">
-                        <p>团队优势</p>
-                    </router-link>
-                </div>
-                <div style="flex: 1; background-color: #f4aa3c">
-                    <router-link class="about_link" to="/about/Prize">
-                        <p>奖项证书</p>
+                <div style="flex: 1;margin: 2px;" v-for="item in we3">
+                    <router-link class="about_link" :to="item.path">
+                        <img style="width:100%" :src="item.img" alt="">
                     </router-link>
                 </div>
             </div>
@@ -195,20 +180,64 @@
     export default {
         name: 'WeinuoHome',
         data() {
-            return {}
+            return {
+                sliders: [
+                    {
+                        img: '/static/img/slide1.png'
+                    }, {
+                        img: '/static/img/slide2.png'
+                    }, {
+                        img: '/static/img/slide3.png'
+                    },
+                ],
+                slides: [
+                    {
+                        img: '/static/img/slider1.png'
+                    }, {
+                        img: '/static/img/slider2.png'
+                    }, {
+                        img: '/static/img/slider3.png'
+                    }, {
+                        img: '/static/img/slider4.png'
+                    }, {
+                        img: '/static/img/slider5.png'
+                    }
+                ],
+                we1: [{
+                    img: '/static/img/introduce.png',
+                    path: '/about/Introduction'
+                }, {
+                    img: '/static/img/business.png',
+                    path: '/about/Business'
+                }],
+                we2: [{
+                    img: '/static/img/idea.png',
+                    path: '/about/Idea'
+                }, {
+                    img: '/static/img/model.png',
+                    path: '/about/ManagementModel'
+                }],
+                we3: [{
+                    img: '/static/img/advantage.png',
+                    path: '/about/Advantage'
+                }, {
+                    img: '/static/img/prize.png',
+                    path: '/about/Prize'
+                }],
+            }
         },
-        mounted(){
-            var mySwiper0 = new Swiper ('.swiper-container0', {
+        mounted() {
+            var mySwiper0 = new Swiper('.swiper-container0', {
                 loop: true,
                 autoplay: true,
-                effect : 'fade',
+                effect: 'fade',
 
             })
 
-            var mySwiper = new Swiper ('.swiper-container', {
+            var mySwiper = new Swiper('.swiper-container', {
                 loop: true,
                 autoplay: true,
-                effect : 'cube',
+                effect: 'cube',
 
             });
 
@@ -220,10 +249,11 @@
 <style scoped>
     .all {
         text-align: center;
+        overflow: hidden;
     }
 
     .swiper-container0 {
-        height: 200px;
+        height: 250px;
     }
 
     .service {
@@ -293,7 +323,6 @@
         font-weight: bold;
     }
 
-
     .industry {
         text-align: center;
         height: 340px;
@@ -331,19 +360,19 @@
 
     .case {
         text-align: center;
-        height: 285px;
+        height: 330px;
         padding-top: 45px;
         background-color: #f5f5f5;
     }
 
     .swiper-container {
         height: 200px;
-        width: 100%;
+        padding: 0;
     }
 
     .about {
         text-align: center;
-        height: 560px;
+        height: 500px;
         padding-top: 45px;
         background-color: #ffffff;
     }
@@ -351,13 +380,11 @@
     .about_m {
         display: flex;
         padding: 0 15px;
-        height: 150px;
     }
 
     .about_link {
         color: #FFFFFF;
         text-decoration: none;
-        line-height: 130px;
         font-weight: bold;
     }
 </style>
