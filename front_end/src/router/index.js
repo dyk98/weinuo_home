@@ -9,8 +9,10 @@ import ConsultationService from '@/components/ConsultationService'
 import OperationalService from '@/components/OperationalService'
 import CareerOpportunit from '@/components/CareerOpportunit'
 import AboutUs from '@/components/AboutUs'
+import CompanyInFo from '@/components/common/CompanyInFo'
 
 Vue.use(Router)
+Vue.use('company_info',CompanyInFo)
 
 Vue.component('MyHeader',MyHeader)
 
