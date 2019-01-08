@@ -14,31 +14,31 @@
                         <el-collapse v-model="activeNames" accordion>
                             <el-collapse-item title="轮播图管理" name="1" class="section">
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>动态轮播</p></router-link>
+                                    <router-link class="link" to="/Move"><p>动态轮播</p></router-link>
                                 </div>
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>案例轮播</p></router-link>
+                                    <router-link class="link" to="/Case"><p>案例轮播</p></router-link>
                                 </div>
 
                             </el-collapse-item>
                             <el-collapse-item title="案例管理" name="2" class="section">
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>服务案例</p></router-link>
+                                    <router-link class="link" to="/Service"><p>服务案例</p></router-link>
                                 </div>
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>方案案例</p></router-link>
+                                    <router-link class="link" to="/Program"><p>方案案例</p></router-link>
                                 </div>
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>行业案例</p></router-link>
+                                    <router-link class="link" to="/Industry"><p>行业案例</p></router-link>
                                 </div>
 
                             </el-collapse-item>
                             <el-collapse-item title="联系我们" name="3" class="section">
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>地址修改</p></router-link>
+                                    <router-link class="link" to="/Address"><p>地址修改</p></router-link>
                                 </div>
                                 <div class="section_list">
-                                    <router-link class="link" to="/"><p>联系方式修改</p></router-link>
+                                    <router-link class="link" to="/Connection"><p>联系方式修改</p></router-link>
                                 </div>
 
                             </el-collapse-item>
