@@ -6,37 +6,37 @@
                 <router-link to="" class="headerSelectP ">涉及行业</router-link>
                 <div class="mune q1">
                     <div class="title">
-                    <h3 class="muneTitle">涉及行业</h3>
+                        <h3 class="muneTitle">涉及行业</h3>
                     </div>
                     <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">高科技</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">银行</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">保险</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">证券</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">金融其他</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">制造</router-link></li>
-                    </ul>
-                    </div>
-
-                    <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">电信</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">互联网</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">汽车</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">医疗和健康</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">旅游交通</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">政府和教育</router-link></li>
-                    </ul>
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">高科技</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">银行</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">保险</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">证券</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">金融其他</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">制造</router-link></li>
+                        </ul>
                     </div>
 
                     <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">媒体娱乐</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">零售</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">人力资源管理</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">AI人工智能</router-link></li>
-                    </ul>
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">电信</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">互联网</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">汽车</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">医疗和健康</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">旅游交通</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">政府和教育</router-link></li>
+                        </ul>
+                    </div>
+
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">媒体娱乐</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">零售</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">人力资源管理</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">AI人工智能</router-link></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -44,55 +44,55 @@
             <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">技术实施</router-link>
                 <div class="mune q1">
-                <div class="title">
-                    <h3 class="muneTitle">技术实施</h3>
-                </div>
+                    <div class="title">
+                        <h3 class="muneTitle">技术实施</h3>
+                    </div>
                     <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">应用开发+运维</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">内嵌式技术+IoT</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">数字化产品+平台研发</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">DevOps实施</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">CRM</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">ERP</router-link></li>
-                    </ul>
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">应用开发+运维</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">内嵌式技术+IoT</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">数字化产品+平台研发</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">DevOps实施</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">CRM</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">ERP</router-link></li>
+                        </ul>
                     </div>
 
                     <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">Marketing Cloud</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">测试服务</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">大数据平台</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">产品化解决方案</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">HCM</router-link></li>
-                    </ul>
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">Marketing Cloud</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">测试服务</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">大数据平台</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">产品化解决方案</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">HCM</router-link></li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="headerSelect item1">
-            <router-link to="" class="headerSelectP">数字营销</router-link>
-            <div class="mune q1">
-                <div class="title">
-                    <h3 class="muneTitle">数字营销</h3>
-                </div>
-                <div class="mylist">
-                    <ul class="muneList">
-                        <li class="listItem"><router-link class="Item" to="">用户交互设计</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">内容管理解决方案</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">线上营销</router-link></li>
-                        <li class="listItem"><router-link class="Item" to="">全球化及本地化服务</router-link></li>
-                    </ul>
+                <router-link to="" class="headerSelectP">数字营销</router-link>
+                <div class="mune q1">
+                    <div class="title">
+                        <h3 class="muneTitle">数字营销</h3>
+                    </div>
+                    <div class="mylist">
+                        <ul class="muneList">
+                            <li class="listItem"><router-link class="Item" to="">用户交互设计</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">内容管理解决方案</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">线上营销</router-link></li>
+                            <li class="listItem"><router-link class="Item" to="">全球化及本地化服务</router-link></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
             <div class="headerSelect item1">
                 <router-link to="" class="headerSelectP">咨询服务</router-link>
                 <div class="mune q1">
-                <div class="title">
-                    <h3 class="muneTitle">数字营销</h3>
-                </div>
+                    <div class="title">
+                        <h3 class="muneTitle">数字营销</h3>
+                    </div>
                     <div class="mylist">
                         <ul class="muneList">
                             <li class="listItem"><router-link class="Item" to="">数字化转型</router-link></li>
@@ -158,6 +158,13 @@
                 </div>
             </div>
         </div>
+
+        <el-carousel height="300px">
+            <el-carousel-item v-for="item in 4" :key="item">
+                <h3>{{ item }}</h3>
+            </el-carousel-item>
+        </el-carousel>
+
     </div>
 
 </template>
@@ -165,6 +172,10 @@
 <script>
     export default {
         name: "MyHeader",
+        data () {
+            return {
+            }
+        },
     }
 </script>
 
@@ -264,4 +275,22 @@
     .item1:hover .q1 {
         display: flex;
     }
+
+    .el-carousel__item h3 {
+        color: #475669;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 150px;
+        margin: 0;
+    }
+
+    .el-carousel__item:nth-child(2n) {
+        background-color: #99a9bf;
+    }
+
+    .el-carousel__item:nth-child(2n+1) {
+        background-color: #d3dce6;
+    }
+
+
 </style>

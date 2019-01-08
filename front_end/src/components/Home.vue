@@ -1,16 +1,18 @@
 <template>
 
     <div id="app">
+        <company_info></company_info>
         <MyHeader></MyHeader>
         <IndustrySection></IndustrySection>
-        <CompanyInFo></CompanyInFo>
+
     </div>
 </template>
 
 <script>
-  export default {
-    name: "Home",
-  }
+
+    export default {
+        name: "Home"
+    }
 </script>
 
 <style scoped>
