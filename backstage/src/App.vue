@@ -1,10 +1,11 @@
 <template>
     <div id="app">
 
-        <div class="head" >
+
             <div class="top_bar">
                 <h3>维诺智创后台管理系统</h3>
             </div>
+
             <div class="left_bar">
                 <el-collapse-transition>
                     <div v-show="show3">
@@ -49,7 +50,7 @@
 
             </div>
 
-        </div>
+
 
         <div style="height: 30px;"></div>
         <router-view/>
@@ -93,7 +94,6 @@
         width: 100%;
         top: 0;
         height: 100%;
-        z-index: 999;
     }
 
     .foot_bar p {
@@ -115,9 +115,11 @@
 
     .top_bar {
         margin: 0;
-        width: auto;
+        width: 100%;
         height: 45px;
         background-color: #2f333d;
+        position: fixed;
+        z-index: 999;
     }
 
     .top_bar h3 {
@@ -130,9 +132,10 @@
         height: 100%;
         width: 15%;
         background-color: #ffffff;
-        float: top;
         border:1px solid #d5d9dd;
-
+        z-index: 99;
+        position: fixed;
+        top: 45px;
     }
 
     .el-collapse-item__header {

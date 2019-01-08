@@ -6,7 +6,7 @@
             <p>轮播图管理</p>
             <div class="hr"></div>
             <div class="lunbo_flex">
-                <div class="img1">
+                <div class="img1"  @click="move">
                     <img src="/static/img/lunbo.png" alt="">
                     <p>动态轮播</p>
                 </div>
@@ -59,7 +59,13 @@
 
 <script>
     export default {
-        name: "WeinuoAdmin"
+        name: "WeinuoAdmin",
+        methods: {
+            move () {
+                this.$router.push({path:'/Move'});
+            },
+        }
+
     }
 </script>
 
@@ -67,7 +73,7 @@
     .body {
         background-color: #eff5f8;
         color: #2f333d;
-
+        position: relative;
     }
 
     .lunbo {
