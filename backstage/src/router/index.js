@@ -2,15 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import WeinuoAdmin from '@/components/WeinuoAdmin'
 
-import Address from '@/components/Address'
-import Connection from '@/components/Connection'
-
 import Case from '@/components/Case'
 import Move from '@/components/Move'
 
 import Industry from '@/components/Industry'
 import Program from '@/components/Program'
 import Service from '@/components/Service'
+
+import Address from '@/components/Address'
+import Connection from '@/components/Connection'
+
 
 
 Vue.use(Router)
