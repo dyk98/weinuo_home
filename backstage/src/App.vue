@@ -97,7 +97,7 @@
     }
 
     .foot_bar p {
-        margin-left: 20%;
+        margin-left: 2%;
         text-align: left;
     }
 
@@ -108,7 +108,9 @@
         background-color: #2f333d;
         color: white;
         z-index: 999;
-        line-height: 45px;
+        line-height: 15px;
+        position: fixed;
+        bottom:0;
     }
 
     .top_bar {
