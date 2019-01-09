@@ -1,10 +1,8 @@
 <template>
-
     <div id="app">
-        <company_info></company_info>
         <MyHeader></MyHeader>
         <IndustrySection></IndustrySection>
-
+        <CompanyInFo></CompanyInFo>
     </div>
 </template>
 
