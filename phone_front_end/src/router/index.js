@@ -1,41 +1,66 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import WeinuoHome from '@/components/WeinuoHome'
-import Service from '@/components//service'
-import Programme from '@/components/programme'
+// 手机
+import WeinuoHome from '@/components/phone/WeinuoHome'
+import Service from '@/components/phone//service'
+import Programme from '@/components/phone/programme'
 
-import Industry from '@/components/industry'
-import Agriculture from '@/components/industry/Agriculture'
-import Medical from '@/components/industry/Medical'
-import Government from '@/components/industry/Government'
-import Culture from '@/components/industry/Culture'
-import Cosmetology from '@/components/industry/Cosmetology'
-import RealEstate from '@/components/industry/RealEstate'
-import Environment from '@/components/industry/Environment'
-import Furniture from '@/components/industry/Furniture'
-import Tourism from '@/components/industry/Tourism'
+import Industry from '@/components/phone/industry'
+import Agriculture from '@/components/phone/industry/Agriculture'
+import Medical from '@/components/phone/industry/Medical'
+import Government from '@/components/phone/industry/Government'
+import Culture from '@/components/phone/industry/Culture'
+import Cosmetology from '@/components/phone/industry/Cosmetology'
+import RealEstate from '@/components/phone/industry/RealEstate'
+import Environment from '@/components/phone/industry/Environment'
+import Furniture from '@/components/phone/industry/Furniture'
+import Tourism from '@/components/phone/industry/Tourism'
 
-import Case from '@/components/case'
-import CaseFirst from '@/components/case/CaseFirst'
-import About from '@/components/about'
+import Case from '@/components/phone/case'
+import CaseFirst from '@/components/phone/case/CaseFirst'
+import About from '@/components/phone/about'
 
-import Advantage from '@/components/about/Advantage'
-import Introduction from '@/components/about/Introduction'
-import Idea from '@/components/about/Idea'
-import ManagementModel from '@/components/about/ManagementModel'
-import Prize from '@/components/about/Prize'
-import Business from '@/components/about/Business'
+import Advantage from '@/components/phone/about/Advantage'
+import Introduction from '@/components/phone/about/Introduction'
+import Idea from '@/components/phone/about/Idea'
+import ManagementModel from '@/components/phone/about/ManagementModel'
+import Prize from '@/components/phone/about/Prize'
+import Business from '@/components/phone/about/Business'
 
+
+// pc
+
+import PcHome from '@/components/pc/WeinuoHome'
+import PcService from '@/components/pc/Service'
+import PcProgram from '@/components/pc/Program'
+import PcIndustry from '@/components/pc/Industry'
+import PcCase from '@/components/pc/Case'
+import PcAbout from '@/components/pc/About'
 
 Vue.use(Router);
 
+Vue.component('PcService', PcService);
+Vue.component('PcProgram', PcProgram);
+Vue.component('PcIndustry', PcIndustry);
+Vue.component('PcCase', PcCase);
+Vue.component('PcAbout', PcAbout);
+
+
 export default new Router({
     routes: [
+        // pc
         {
-            path: '/',
+            path: '/pc',
+            name: 'PcHome',
+            component: PcHome,
+        },
+
+        // phone
+        {
+            path: '/phone',
             name: 'WeinuoHome',
-            component: WeinuoHome
+            component: WeinuoHome,
         }, {
             path: '/service',
             name: 'Service',
