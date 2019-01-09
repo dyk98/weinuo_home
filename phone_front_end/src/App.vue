@@ -8,7 +8,7 @@
                 <div style="flex: 2">
                     <img style="height: 50px;margin-left:65%;margin-top: -5px;" src="/static/img/logo.png" alt="">
                 </div>
-                <div style="flex: 1">
+                <div style="flex: 1.5">
                 <p>天津维诺智创</p>
                 <p>Technology</p>
                 </div>
@@ -63,9 +63,9 @@
 
                 </el-collapse>
 
-                <div>
-                    <p>地址：天津市西青区XXXXX</p>
-                    <p>联系方式：XXXXX</p>
+                <div style="color: #FFFFFF;">
+                    <p>地址：天津西青区才智道35号  海澜德产业园区</p>
+                    <p>联系方式：022-23983126</p>
                 </div>
                 </div>
                 <div style="flex: 3;opacity: 0" @click="off">我是打酱油的,xixi你看不见我</div>
@@ -86,8 +86,8 @@
             </div>
             <hr>
             <div class="contact">
-                <p>联系方式：xxxxxxx</p>
-                <p>地址：天津西青区XXXXX</p>
+                <p>联系方式：022-23983126</p>
+                <p>地址：天津西青区才智道35号  海澜德产业园区</p>
             </div>
             <hr>
             <div>
