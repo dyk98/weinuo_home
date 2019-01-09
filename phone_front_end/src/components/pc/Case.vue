@@ -1,6 +1,9 @@
 <template>
     <div class="case">
-        <router-link class="tag" to="/case">案例</router-link>
+        <p class="tag" >案例</p>
+        <div>
+            <p>我们针对产品及行业性质进行个性化方案设计为您的企业创造更高市场价值</p>
+        </div>
         <div class="hr"></div>
         <div class="content">
             <div class="content_img1">
@@ -38,13 +41,18 @@
         background-color: #357ad9;
         height: 2px;
         width: 35px;
-        margin: 8px auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
 
     .tag {
         color: #2e3537;
-        font-size: 25px;
+        font-size: 40px;
         text-decoration: none;
+        position: relative;
+        top: -0.5em;
+        height: 10px;
     }
 
     .content {

@@ -1,7 +1,10 @@
 <template>
     <div class="about">
         <div style="width: 70%;margin: 0 auto;text-align: center">
-        <router-link class="tag" to="/about">关 于</router-link>
+        <p class="tag">关 于</p>
+            <div>
+                <p>我们以技术服务为核心业务，并在此基础上提供行业应用软件等一系列信息服务</p>
+            </div>
         <div class="hr"></div>
         <div class="about_m">
             <div style="flex: 1;" v-for="item in we1">
@@ -63,6 +66,7 @@
         text-align: center;
         background-color: #ffffff;
     }
+
     .hr {
         background-color: #357ad9;
         height: 2px;
