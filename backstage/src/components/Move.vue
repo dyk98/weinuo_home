@@ -19,6 +19,7 @@
             <!--</form>-->
             <p>上传图片</p>
             <input class="file" name="file" type="file" accept="image/png,image/gif,image/jpeg" @change="update"/>
+
         </div>
     </div>
 </template>
@@ -28,7 +29,7 @@
     export default {
         name: "Move",
         mounted(){
-            this.axios.post('http://47.93.33.250/php/get.php', {})
+            this.axios.get('http://47.93.33.250/php/get.php', {})
                 .then(function (aaa) {
                     console.log(aaa)
                 })
