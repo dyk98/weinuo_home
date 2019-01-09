@@ -260,7 +260,7 @@
                                     <router-link to="CompanyInFo" id="click">供应商商业行为与道德守则</router-link>
                                 </li>
                                 <li class="menu-item">
-                                    <router-link to="CompanyInFo" id="click">文思海辉（Pactera）个人信息保护方针 | 文思海辉</router-link>
+                                    <router-link to="CompanyInFo" id="click">维诺智创（Weinuo）个人信息保护方针 | 维诺智创</router-link>
                                 </li>
                             </ul>
                         </div>
@@ -416,7 +416,6 @@
     .footer {
         background: #5e5e5e;
         color: #ffffff;
-        padding-top: 20px;
         padding-bottom: 5px;
     }
 
