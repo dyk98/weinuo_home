@@ -28,6 +28,7 @@
     import axios from 'axios'
     export default {
         name: "Move",
+
         mounted(){
             this.axios.get('http://47.93.33.250/php/get.php', {})
                 .then(function (aaa) {
@@ -47,9 +48,13 @@
                     })
             }
         }
+
     }
+
 </script>
 
 <style scoped>
-
+    .body {
+        margin-top: 20px;
+    }
 </style>

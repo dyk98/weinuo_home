@@ -1,13 +1,14 @@
 <template>
     <div id="app">
-        <div class="head" >
+        <div class="head">
             <div class="top_bar">
                 <h3>维诺智创  后台管理系统</h3>
             </div>
-            <div class="left_bar" >
-                <el-collapse-transition >
+            <div class="left_bar">
+                <el-collapse-transition>
                     <div v-show="show3">
-                        <div style="color:#3c3f41; margin-bottom: 0.1em; font-weight: bold;text-align: left;font-size:18px;padding: 10px 0 0 15px; " @click="home">
+                        <div style="color:#3c3f41; margin-bottom: 0.1em; font-weight: bold;text-align: left;font-size:18px;padding: 10px 0 0 15px; "
+                             @click="home">
                             主页
                         </div>
                         <el-collapse v-model="activeNames" accordion>
@@ -48,12 +49,11 @@
 
             </div>
 
-        </div>
-
-        <div style="height: 30px;"></div>
-        <router-view/>
-        <div class="foot_bar">
-            <p>天津维诺智创大数据公司</p>
+            <div style="height: 30px;"></div>
+            <router-view/>
+            <div class="foot_bar">
+                <p>天津维诺智创大数据公司</p>
+            </div>
         </div>
     </div>
 </template>
@@ -91,11 +91,10 @@
         width: 100%;
         top: 0;
         height: 100%;
-        z-index: 999;
     }
 
     .foot_bar p {
-        margin-left: 20%;
+        margin-left: 2%;
         text-align: left;
     }
 
@@ -106,7 +105,9 @@
         background-color: #2f333d;
         color: white;
         z-index: 999;
-        line-height: 45px;
+        line-height: 15px;
+        position: fixed;
+        bottom: 0;
     }
 
     .top_bar {
@@ -128,8 +129,9 @@
         width: 15%;
         background-color: #ffffff;
         margin-top: 45px;
-        border:1px solid #d5d9dd;
+        border: 1px solid #d5d9dd;
         position: fixed;
+
     }
 
     .el-collapse-item__header {
@@ -145,23 +147,28 @@
     }
 
     .el-collapse-item__wrap {
-        background-color:  #eff5f8;
+        background-color: #eff5f8;
         border: none;
     }
+
     .el-collapse-item__header :hover {
         background-color: #eff5f8;
     }
+
     .section_list p:hover {
         background-color: #7470e6;
     }
+
     .section_list p:active {
         background-color: #7470e6;
     }
+
     .link {
         text-decoration: none;
         font-size: 1.5em;
         color: black;
     }
+
     .link :hover {
         color: white;
     }

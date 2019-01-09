@@ -61,10 +61,12 @@
     export default {
         name: "WeinuoAdmin",
         methods: {
-            move(){
+
+            move() {
                 this.$router.push({path: '/Move'});
-            }
+            },
         }
+
     }
 </script>
 
@@ -72,7 +74,7 @@
     .body {
         background-color: #eff5f8;
         color: #2f333d;
-
+        position: relative;
     }
 
     .lunbo {
