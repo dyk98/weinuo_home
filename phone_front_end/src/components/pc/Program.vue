@@ -1,5 +1,6 @@
 <template>
     <div class="programme">
+        <div style="width: 70%;margin: 0 auto;text-align: center">
         <p class="tag" >方 案</p>
         <div>
             <p>我们针对产品及行业性质进行个性化方案设计，为您的企业创造更高的市场价值</p>
@@ -7,7 +8,7 @@
         <div class="hr"></div>
 <div class="container">
         <div class="img">
-            <img src="/static/img/Program.png" style="width: 60%">
+            <img src="/static/img/Program.png" style="width: 100%"></div>
         </div>
         <!--<table class="myselution-list" width="80%">-->
             <!--<tbody><tr>-->
@@ -87,11 +88,11 @@
 
     .programme {
         text-align: center;
-        height: 700px;
         padding-top: 45px;
         width: 100%;
         margin: 0 auto;
         background: #f5f5f5;
+        padding-bottom: 100px;
     }
 
     .programme_icon {
