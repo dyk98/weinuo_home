@@ -1,7 +1,7 @@
 <template>
     <div>
         <PcService></PcService>
-        <PcProgram></PcProgram>
+        <PcProgram ></PcProgram>
         <PcIndustry></PcIndustry>
         <PcCase></PcCase>
         <PcAbout></PcAbout>

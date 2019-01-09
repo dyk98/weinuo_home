@@ -1,18 +1,18 @@
 <template>
     <div class="about">
-        <router-link class="tag" to="/about">关于</router-link>
+        <router-link class="tag" to="/about">关 于</router-link>
         <div class="hr"></div>
         <div class="about_m">
-            <div style="flex: 1;margin: 2px;" v-for="item in we1">
+            <div style="flex: 1;margin: 3px;" v-for="item in we1">
                 <router-link class="about_link" :to="item.path">
-                    <img style="width:100%" :src="item.img" alt="">
+                    <img style="width:80%;height: 80%" :src="item.img" alt="">
                 </router-link>
             </div>
         </div>
         <div class="about_m">
-            <div style="flex: 1;margin: 2px;" v-for="item in we2">
+            <div style="flex: 1;margin: 3px;" v-for="item in we2">
                 <router-link class="about_link" :to="item.path">
-                    <img style="width:100%" :src="item.img" alt="">
+                    <img style="width:80%;height: 80%" :src="item.img" alt="">
                 </router-link>
             </div>
         </div>
@@ -54,20 +54,26 @@
 
 <style scoped>
     .about {
-        width: 70%;
+        width: 65%;
         margin: 0 auto;
+        height: 500px;
     }
     .hr {
         background-color: #357ad9;
         height: 2px;
         width: 35px;
-        margin: 8px auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
 
     .tag {
         color: #2e3537;
-        font-size: 25px;
+        font-size: 40px;
         text-decoration: none;
+        position: relative;
+        top: -0.5em;
+        height: 10px;
     }
     .about {
         text-align: center;
@@ -78,7 +84,6 @@
 
     .about_m {
         display: flex;
-        padding: 0 15px;
     }
 
     .about_link {
@@ -86,4 +91,5 @@
         text-decoration: none;
         font-weight: bold;
     }
+
 </style>

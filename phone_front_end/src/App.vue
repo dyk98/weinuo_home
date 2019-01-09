@@ -103,7 +103,7 @@
                 <p class="companyName">天津维诺智通</p>
                 <div class="headerTitle">
                     <div class="headerSelect item1">
-                        <router-link to="" class="headerSelectP ">服务</router-link>
+                        <router-link to="PcService" class="headerSelectP ">服务</router-link>
                         <div class="mune q1">
                             <div class="title">
                                 <h3 class="muneTitle">服务</h3>
