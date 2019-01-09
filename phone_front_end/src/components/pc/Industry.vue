@@ -1,6 +1,9 @@
 <template>
     <div class="industry">
-        <router-link class="tag" to="/industry">行业</router-link>
+        <p class="tag" >行业</p>
+        <div>
+            <p>我们与多个行业内知名企业合作，熟悉洞察行业现状及发展是我们一直在做的事</p>
+        </div>
         <div class="hr"></div>
         <div class="industry_icon">
             <router-link class="industry_icon_m" style=" background-color: #f894f8;" to="/industry/Medical">
@@ -101,12 +104,17 @@
         background-color: #357ad9;
         height: 2px;
         width: 35px;
-        margin: 8px auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
 
     .tag {
         color: #2e3537;
-        font-size: 25px;
+        font-size: 40px;
         text-decoration: none;
+        position: relative;
+        top: -0.5em;
+        height: 10px;
     }
 </style>
