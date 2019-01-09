@@ -253,7 +253,7 @@
     }
 
     .swiper-container0 {
-        height: 250px;
+        height: 400px;
     }
 
     .service {

@@ -100,7 +100,7 @@
 
         <div class="pc" v-show="pc">
             <div class="MyHeader">
-                <p class="companyName">天津维诺智通</p>
+                <p class="companyName" style="position: fixed">天津维诺智通</p>
                 <div class="headerTitle">
                     <div class="headerSelect item1">
                         <router-link to="PcService" class="headerSelectP ">服务</router-link>
@@ -221,12 +221,14 @@
                     </div>
 
                 </div>
-
-                <el-carousel height="300px">
-                    <el-carousel-item v-for="item in 4" :key="item">
-                        <h3>{{ item }}</h3>
-                    </el-carousel-item>
-                </el-carousel>
+                <div style="height: 50px"></div>
+                <div class="swiper-container0" style="margin: 0 auto;text-align: center">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" v-for="slider in sliders">
+                            <img :src="slider.img" alt="" style="margin: 0 auto;width: 70%; height: 400px">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -326,6 +328,9 @@
 </template>
 
 <script>
+    import Swiper from 'swiper'
+    import 'swiper/dist/css/swiper.min.css';
+
     export default {
         name: 'App',
         data() {
@@ -333,7 +338,16 @@
                 activeName: '1',
                 show3: false,
                 phone: false,
-                pc: false
+                pc: false,
+                sliders: [
+                    {
+                        img: '/static/img/slide3.png'
+                    }, {
+                        img: '/static/img/slide2.png'
+                    }, {
+                        img: '/static/img/slide1.png'
+                    },
+                ],
             };
         },
         methods: {
@@ -353,6 +367,16 @@
                 this.$router.push({path:'/pc'})
                 this.pc = true
             }
+        },
+        mounted() {
+            var mySwiper0 = new Swiper('.swiper-container0', {
+                loop: true,
+                autoplay: true,
+                effect: 'fade',
+
+            })
+
+
         }
     }
 </script>
@@ -369,7 +393,7 @@
         height: 70px;
         background: #5e5e5e;
         display: flex;
-        top: 0;
+        top: 10;
         position: fixed;
         width: 100%;
         z-index: 999;
@@ -474,6 +498,7 @@
         color: #2c3e50;
         font-weight: bold;
         font-size: 18px;
+        background-color: #FFFFFF;
     }
 
     .headerSelectP:hover::after {
@@ -488,15 +513,18 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
         transition: transform .2s ease;
+        background-color: #FFFFFF;
     }
 
 
     .headerSelectP:hover {
         color: #ce1b2e;
+        background-color: #FFFFFF;
     }
 
     .headerTitle:hover {
         border-bottom: 1.5px #ce1b2e solid;
+        background-color: #FFFFFF;
     }
 
     .headerTitle {
@@ -505,11 +533,17 @@
         justify-content: space-around;
         line-height: 50px;
         border-bottom: 1.5px white solid;
+        z-index: 999;
+        top: 0;
+        position: fixed;
+        background-color: #FFFFFF;
+        width: 100%;
     }
 
     .headerSelect {
         display: inline-block;
         position: relative;
+        z-index: 999;
     }
 
     .MyHeader {
@@ -557,6 +591,10 @@
 
     .item1:hover .q1 {
         display: flex;
+        background-color: #FFFFFF;
+        padding: 0 15px;
+        border: 1px solid #bd3135;
+
     }
 
     .el-carousel__item h3 {
