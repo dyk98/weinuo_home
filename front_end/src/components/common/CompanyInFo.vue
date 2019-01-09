@@ -1,5 +1,4 @@
 <template>
-    <div id="app">
         <div class="footer">
             <div class="footer_top">
                 <b></b>
@@ -50,9 +49,6 @@
                                 <router-link to="CompanyInFo" id="click">欧洲/中东/非洲</router-link>
                             </li>
                             <li class="menu-item">
-                                <router-link to="CompanyInFo" id="click">美洲</router-link>
-                            </li>
-                            <li class="menu-item">
                                 <router-link to="CompanyInFo" id="click">查看所有</router-link>
                             </li>
                         </ul>
@@ -92,7 +88,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -116,9 +111,6 @@
 <style scoped>
 .footer {
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 .footer_top{
     height: 80px;

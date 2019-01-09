@@ -1,4 +1,4 @@
-<template xmlns:router-link="http://www.w3.org/1999/html">
+<template >
   <div id="app">
     <router-view/>
   </div>
@@ -12,11 +12,6 @@ export default {
 
 <style>
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 </style>
 

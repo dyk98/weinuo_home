@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MyHeader from '@/components/common/MyHeader'
 import Home from '@/components/Home'
+import MyHeader from '@/components/common/MyHeader'
+import CompanyInFo from '@/components/common/CompanyInFo'
+import IndustrySection from '@/components/common/IndustrySection'
 import TechnicalImplementation from '@/components/TechnicalImplementation'
 import Industry from '@/components/Industry'
 import DigitalMarketing from '@/components/DigitalMarketing'
@@ -9,20 +11,19 @@ import ConsultationService from '@/components/ConsultationService'
 import OperationalService from '@/components/OperationalService'
 import CareerOpportunit from '@/components/CareerOpportunit'
 import AboutUs from '@/components/AboutUs'
-import CompanyInFo from '@/components/common/CompanyInFo'
 
-Vue.use(Router)
-Vue.use('company_info',CompanyInFo)
-
-Vue.component('MyHeader',MyHeader)
+Vue.use(Router);
+Vue.component('CompanyInFo',CompanyInFo);
+Vue.component('MyHeader',MyHeader);
+Vue.component('IndustrySection',IndustrySection);
 
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'Home',
-      component: MyHeader
-    },{
+      component: Home
+    }, {
           path: '/home/industry',
           name: 'Industry',
           component: Industry
