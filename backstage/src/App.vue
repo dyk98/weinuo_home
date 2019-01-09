@@ -2,7 +2,7 @@
     <div id="app">
         <div class="head" >
             <div class="top_bar">
-                <h3>维诺智创后台管理系统</h3>
+                <h3>维诺智创  后台管理系统</h3>
             </div>
             <div class="left_bar" >
                 <el-collapse-transition >
