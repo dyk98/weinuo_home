@@ -147,4 +147,7 @@
     .list {
         text-decoration: none;
     }
+    .section_title {
+        margin-left: 1.2em;
+    }
 </style>

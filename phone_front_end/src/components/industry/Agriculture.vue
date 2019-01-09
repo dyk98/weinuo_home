@@ -72,5 +72,9 @@
 </script>
 
 <style scoped>
-
+    .container {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 2em;
+    }
 </style>

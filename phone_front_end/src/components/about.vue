@@ -97,5 +97,8 @@
         margin: 0.3em auto;
         padding: 1em 0;
     }
+    .title {
+        margin-left: 1.5em;
+    }
 
 </style>
