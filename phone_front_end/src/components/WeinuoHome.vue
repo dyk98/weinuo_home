@@ -246,7 +246,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
     .all {
         text-align: center;
         overflow: hidden;
@@ -387,4 +387,5 @@
         text-decoration: none;
         font-weight: bold;
     }
+
 </style>

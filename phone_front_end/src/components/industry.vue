@@ -103,7 +103,7 @@
 <style scoped>
     .industry_area {
         height: 318px;
-        background-color: whitesmoke;
+        background-color: #FFFFFF;
     }
     .industry_area h3 {
         font-size: 2em;
