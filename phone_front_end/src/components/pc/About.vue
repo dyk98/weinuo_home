@@ -8,16 +8,16 @@
         <div class="hr"></div>
         <div class="about_m">
             <div style="flex: 1;" v-for="item in we1">
-                <router-link class="about_link" :to="item.path">
+                <div class="about_link" >
                     <img style="width:98%;height: 98%" :src="item.img" alt="">
-                </router-link>
+                </div>
             </div>
         </div>
         <div class="about_m">
             <div style="flex: 1;" v-for="item in we2">
-                <router-link class="about_link" :to="item.path">
+                <div class="about_link" >
                     <img style="width:98%;height: 98%" :src="item.img" alt="">
-                </router-link>
+                </div>
             </div>
         </div>
         </div>
@@ -32,24 +32,24 @@
             return{
                 we1: [{
                     img: '/static/img/introduce.png',
-                    path: '/about/Introduction'
+                    path: ''
                 }, {
                     img: '/static/img/business.png',
-                    path: '/about/Business'
+                    path: ''
                 }, {
                     img: '/static/img/advantage.png',
-                    path: '/about/Advantage'
+                    path: ''
                 },
                 ],
                 we2: [{
                     img: '/static/img/idea.png',
-                    path: '/about/Idea'
+                    path: ''
                 }, {
                     img: '/static/img/model.png',
-                    path: '/about/ManagementModel'
+                    path: ''
                 }, {
                     img: '/static/img/prize.png',
-                    path: '/about/Prize'
+                    path: ''
                 }
                 ],
             }

@@ -4,7 +4,6 @@ import Router from 'vue-router'
 // 手机
 import WeinuoHome from '@/components/phone/WeinuoHome'
 import Service from '@/components/phone//service'
-import Programme from '@/components/phone/programme'
 
 import Industry from '@/components/phone/industry'
 import Agriculture from '@/components/phone/industry/Agriculture'
@@ -37,9 +36,11 @@ import PcProgram from '@/components/pc/Program'
 import PcIndustry from '@/components/pc/Industry'
 import PcCase from '@/components/pc/Case'
 import PcAbout from '@/components/pc/About'
+import PcSlider from '@/components/pc/Slider'
 
 Vue.use(Router);
 
+Vue.component('PcSlider', PcSlider);
 Vue.component('PcService', PcService);
 Vue.component('PcProgram', PcProgram);
 Vue.component('PcIndustry', PcIndustry);
@@ -65,10 +66,6 @@ export default new Router({
             path: '/service',
             name: 'Service',
             component: Service
-        }, {
-            path: '/programme',
-            name: 'Programme',
-            component: Programme
         }, {
             path: '/industry',
             name: 'Industry',

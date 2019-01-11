@@ -33,7 +33,7 @@
     .case {
         text-align: center;
         padding-top: 50px;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
         padding-bottom: 100px;
     }
 

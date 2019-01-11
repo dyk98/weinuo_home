@@ -39,40 +39,6 @@
             </div>
         </div>
 
-        <!--方案-->
-        <div class="programme">
-            <router-link class="tag" to="/programme">方案</router-link>
-            <div class="hr"></div>
-            <div class="programme_icon">
-                <div class="programme_icon_m" style="background-color: #1570c4;">
-                    <img src="/static/img/qiye.png" alt="">
-                    <p>企业应用</p>
-                </div>
-                <div class="programme_icon_m" style="background-color: #72a8d7;">
-                    <img src="/static/img/yidong.png" alt="">
-                    <p>移动应用</p>
-                </div>
-                <div class="programme_icon_m" style="background-color: #1570c4;">
-                    <img src="/static/img/yunyin.png" alt="">
-                    <p>运营平台</p>
-                </div>
-            </div>
-            <div class="programme_icon">
-                <div class="programme_icon_m" style="background-color: #72a8d7;">
-                    <img src="/static/img/shangwu.png" alt="">
-                    <p>电子商务</p>
-                </div>
-                <div class="programme_icon_m" style="background-color: #1570c4;">
-                    <img src="/static/img/kehu.png" alt="">
-                    <p>客户关系</p>
-                </div>
-                <div class="programme_icon_m" style="background-color: #72a8d7;">
-                    <img src="/static/img/shengchan.png" alt="">
-                    <p>生产管理</p>
-                </div>
-            </div>
-        </div>
-
         <!--行业-->
         <div class="industry">
         <router-link class="tag" to="/industry">行业</router-link>
@@ -293,23 +259,6 @@
         margin-top: 0;
     }
 
-    .programme {
-        text-align: center;
-        height: 330px;
-        padding-top: 45px;
-        background-color: #f5f5f5;
-    }
-
-    .programme_icon {
-        display: flex;
-        padding: 0 15px;
-    }
-
-    .programme_icon_m {
-        flex: 1;
-        margin: 1.5px;
-    }
-
     .programme_icon img {
         width: 55px;
         height: 55px;
@@ -327,7 +276,7 @@
         text-align: center;
         height: 340px;
         padding-top: 45px;
-        background-color: #ffffff;
+        background-color:  #f5f5f5;
     }
 
     .industry_icon {
@@ -362,7 +311,7 @@
         text-align: center;
         height: 330px;
         padding-top: 45px;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
     }
 
     .swiper-container {
@@ -374,7 +323,7 @@
         text-align: center;
         height: 460px;
         padding-top: 45px;
-        background-color: #ffffff;
+        background-color: #f5f5f5;
     }
 
     .about_m {

@@ -16,7 +16,7 @@
 <style scoped>
     .case_area {
         height: 452px;
-        background-color: #FFFFFF;
+        background-color: #F5f5f5;
         margin-left: 10px;
     }
 </style>

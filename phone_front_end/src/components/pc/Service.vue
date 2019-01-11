@@ -1,5 +1,7 @@
 <template>
+    <div>
     <div class="service">
+
         <p class="tag" >服 务</p>
         <div>
             <p>我们以技术服务为核心业务，并在此基础上提供行业应用软件等一系列信息服务</p>
@@ -27,6 +29,7 @@
                 <h2>质量管理</h2>
             </div>
         </div>
+    </div>
     </div>
 </template>
 

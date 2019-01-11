@@ -3,19 +3,19 @@
         <div class="phone" v-show="phone">
             <div class="header">
                 <div class="header_more">
-                    <img src="/static/img/logo.png" alt="" @click="show3 = !show3">
+                    <img src="/static/img/more.png" alt="" @click="show3 = !show3">
                 </div>
                 <div class="header_name">
-                    <div style="flex: 2">
-                        <img style="height: 50px;margin-left:65%;margin-top: -5px;"  alt="">
-                    </div>
-                    <div style="flex: 1.5">
+                    <div>
                         <p>天津维诺智创</p>
                         <p>Technology</p>
                     </div>
+                    <div>
+                        <img style="height: 40px; margin-top: 10px" src="/static/img/logo.png"  alt="">
+                    </div>
                 </div>
             </div>
-            <div style="height: 70px; background-color: #ffffff"></div>
+            <div style="height: 60px; background-color: #ffffff"></div>
             <el-collapse-transition>
                 <div class="navigation_bar" v-show="show3">
                     <div style="flex: 2; padding: 10px 15px; background-color: #ffffff;">
@@ -30,15 +30,7 @@
                                 <div class="navigation_bar_p">资源配置</div>
                                 <div class="navigation_bar_p">质量管理</div>
                             </el-collapse-item>
-                            <el-collapse-item class="navigation_bar_p" title="方案" name="2">
-                                <div class="navigation_bar_p">企业应用</div>
-                                <div class="navigation_bar_p">移动应用</div>
-                                <div class="navigation_bar_p">运营平台</div>
-                                <div class="navigation_bar_p">电子商务</div>
-                                <div class="navigation_bar_p">客户关系</div>
-                                <div class="navigation_bar_p">生产管理</div>
-                            </el-collapse-item>
-                            <el-collapse-item class="navigation_bar_p" title="行业" name="3">
+                            <el-collapse-item class="navigation_bar_p" title="行业" name="2">
                                 <div class="navigation_bar_p">医疗</div>
                                 <div class="navigation_bar_p">政府</div>
                                 <div class="navigation_bar_p">农业</div>
@@ -49,11 +41,11 @@
                                 <div class="navigation_bar_p">环保</div>
                                 <div class="navigation_bar_p">家具</div>
                             </el-collapse-item>
-                            <el-collapse-item class="navigation_bar_p" title="案例" name="4">
+                            <el-collapse-item class="navigation_bar_p" title="案例" name="3">
                                 <div class="navigation_bar_p">案例一</div>
                                 <div class="navigation_bar_p">案例二</div>
                             </el-collapse-item>
-                            <el-collapse-item class="navigation_bar_p" title="关于" name="5">
+                            <el-collapse-item class="navigation_bar_p" title="关于" name="4">
                                 <div class="navigation_bar_p">公司历史</div>
                                 <div class="navigation_bar_p">核心业务</div>
                                 <div class="navigation_bar_p">公司理念</div>
@@ -81,7 +73,6 @@
                 <hr>
                 <div class="navigation">
                     <router-link class="foo" to="/service"><P>服务</P></router-link>
-                    <router-link class="foo" to="/programme"><p>方案</p></router-link>
                     <router-link class="foo" to="/industry"><p>行业</p></router-link>
                     <router-link class="foo" to="/case"><p>案例</p></router-link>
                     <router-link class="foo" to="/about"><p>关于</p></router-link>
@@ -100,138 +91,97 @@
 
         <div class="pc" v-show="pc">
             <div class="MyHeader">
-                <p class="companyName" style="position: fixed">天津维诺智通</p>
+                <p class="companyName">天津维诺智通</p>
                 <div class="headerTitle">
                     <div class="headerSelect item1">
-                        <router-link to="PcService" class="headerSelectP ">服务</router-link>
-                        <div class="mune q1">
-                            <div class="title">
-                                <h3 class="muneTitle">服务</h3>
-                            </div>
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">高科技</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">银行</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">保险</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">证券</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">金融其他</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">制造</router-link></li>
-                                </ul>
-                            </div>
-
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">电信</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">互联网</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">汽车</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">医疗和健康</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">旅游交通</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">政府和教育</router-link></li>
-                                </ul>
-                            </div>
-
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">媒体娱乐</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">零售</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">人力资源管理</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">AI人工智能</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="headerSelect item1">
-                        <router-link to="" class="headerSelectP">方案</router-link>
-                        <div class="mune q1">
-                            <div class="title">
-                                <h3 class="muneTitle">方案</h3>
-                            </div>
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">应用开发+运维</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">内嵌式技术+IoT</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">数字化产品+平台研发</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">DevOps实施</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">CRM</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">ERP</router-link></li>
-                                </ul>
-                            </div>
-
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">Marketing Cloud</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">测试服务</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">大数据平台</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">产品化解决方案</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">HCM</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <router-link class="headerSelectP" to="">服务</router-link>
+                        <!--<div class="mune q1">-->
+                            <!--<div class="title">-->
+                                <!--<h3 class="muneTitle">服务</h3>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">软件开发</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">交互体验</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">运营维护</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">资源配置</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">质量管理</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="headerSelect item1">
                         <router-link to="" class="headerSelectP">行业</router-link>
-                        <div class="mune q1">
-                            <div class="title">
-                                <h3 class="muneTitle">行业</h3>
-                            </div>
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">用户交互设计</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">内容管理解决方案</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">线上营销</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">全球化及本地化服务</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <!--<div class="mune q1">-->
+                            <!--<div class="title">-->
+                                <!--<h3 class="muneTitle">行业</h3>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">医疗</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">政府</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">农业</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">文化</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">美容</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">旅游</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">地产</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">环保</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">家具</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
                     </div>
 
                     <div class="headerSelect item1">
                         <router-link to="" class="headerSelectP">案例</router-link>
-                        <div class="mune q1">
-                            <div class="title">
-                                <h3 class="muneTitle">案例</h3>
-                            </div>
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">数字化转型</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">信息服务生态建设</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">其他咨询服务</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <!--<div class="mune q1">-->
+                            <!--<div class="title">-->
+                                <!--<h3 class="muneTitle">案例</h3>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">旅游</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">文化</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">环保</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">医疗</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">农业</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                     <div class="headerSelect item1">
                         <router-link to="" class="headerSelectP">关于</router-link>
-                        <div class="mune q1">
-                            <div class="title">
-                                <h3 class="muneTitle">关于</h3>
-                            </div>
-                            <div class="mylist">
-                                <ul class="muneList">
-                                    <li class="listItem"><router-link class="Item" to="">大数据分析</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">商业智能</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">云基础设施管理</router-link></li>
-                                    <li class="listItem"><router-link class="Item" to="">业务流程外包（BPO）</router-link></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <!--<div class="mune q1">-->
+                            <!--<div class="title">-->
+                                <!--<h3 class="muneTitle">关于</h3>-->
+                            <!--</div>-->
+                            <!--<div class="mylist">-->
+                                <!--<ul class="muneList">-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">公司介绍</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">核心业务</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">团队优势</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">公司理念</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">经营模式</router-link></li>-->
+                                    <!--<li class="listItem"><router-link class="Item" to="">奖项证书</router-link></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
 
                 </div>
-                <div style="height: 50px"></div>
-                <div class="swiper-container0" style="margin: 0 auto;text-align: center">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" v-for="slider in sliders">
-                            <img :src="slider.img" alt="" style="margin: 0 auto;width: 70%; height: 400px">
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
+            <div style="height: 105px"></div>
             <router-view/>
 
             <div class="footer">
@@ -369,12 +319,7 @@
             }
         },
         mounted() {
-            var mySwiper0 = new Swiper('.swiper-container0', {
-                loop: true,
-                autoplay: true,
-                effect: 'fade',
 
-            })
 
 
         }
@@ -390,7 +335,7 @@
     }
 
     .header {
-        height: 70px;
+        height: 60px;
         background: #ffffff;
         display: flex;
         top: 0;
@@ -400,10 +345,11 @@
     }
 
     .header_name {
-        margin: 15px;
-        flex: 6;
-        /*text-align: right;*/
+        line-height: 30px;
         display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-right: 15px;
     }
 
     .header_name p {
@@ -414,12 +360,10 @@
 
     .header_more {
         margin: 15px;
-        flex: 1;
     }
 
     .header_more img {
-        margin-top: -5px;
-        height: 45px;
+        height: 30px;
     }
 
     .navigation_bar {
@@ -530,6 +474,7 @@
     .headerTitle:hover {
         border-bottom: 1.5px #ce1b2e solid;
         background-color: #FFFFFF;
+
     }
 
     .headerTitle {
@@ -538,8 +483,6 @@
         justify-content: space-around;
         line-height: 50px;
         border-bottom: 1.5px white solid;
-        z-index: 999;
-        top: 0;
         position: fixed;
         background-color: #FFFFFF;
         width: 100%;
@@ -548,11 +491,14 @@
     .headerSelect {
         display: inline-block;
         position: relative;
-        z-index: 999;
+
     }
 
     .MyHeader {
-        padding: 0 50px;
+        width: 100%;
+        z-index: 999;
+        position: fixed;
+        background: #ffffff;
     }
 
     .companyName {
@@ -561,6 +507,7 @@
         letter-spacing: 5px;
         font-size: 22px;
         margin-bottom: 0;
+        margin-left: 50px;
     }
 
     .listItem{
@@ -574,6 +521,7 @@
         font-size: 13px;
         font-weight: bold;
         border-left: 3px solid #e1e3e6;
+
     }
     .Item:hover{
         color: #bd3135;
@@ -599,6 +547,8 @@
         background-color: #FFFFFF;
         padding: 0 15px;
         border: 1px solid #bd3135;
+        position: absolute;
+        height: 300px;
 
     }
 
