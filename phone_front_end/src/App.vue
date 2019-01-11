@@ -3,11 +3,11 @@
         <div class="phone" v-show="phone">
             <div class="header">
                 <div class="header_more">
-                    <img src="/static/img/more.png" alt="" @click="show3 = !show3">
+                    <img src="/static/img/logo.png" alt="" @click="show3 = !show3">
                 </div>
                 <div class="header_name">
                     <div style="flex: 2">
-                        <img style="height: 50px;margin-left:65%;margin-top: -5px;" src="/static/img/logo.png" alt="">
+                        <img style="height: 50px;margin-left:65%;margin-top: -5px;"  alt="">
                     </div>
                     <div style="flex: 1.5">
                         <p>天津维诺智创</p>
@@ -18,8 +18,8 @@
             <div style="height: 70px; background-color: #ffffff"></div>
             <el-collapse-transition>
                 <div class="navigation_bar" v-show="show3">
-                    <div style="flex: 2; padding: 5px 15px; background-color: #5e5e5e;">
-                        <div style="font-size: 18px; color: #FFFFFF; margin-bottom: 5px; font-weight: bold"
+                    <div style="flex: 2; padding: 10px 15px; background-color: #ffffff;">
+                        <div style="font-size: 14px; color: #5e5e5e; margin-bottom: 5px;"
                              @click="home">主页
                         </div>
                         <el-collapse v-model="activeName" accordion>
@@ -65,7 +65,7 @@
 
                         </el-collapse>
 
-                        <div style="color: #FFFFFF;">
+                        <div style="color: #5e5e5e;font-size: 10px;">
                             <p>地址：天津西青区才智道35号 海澜德产业园区</p>
                             <p>联系方式：022-23983126</p>
                         </div>
@@ -93,7 +93,7 @@
                 </div>
                 <hr>
                 <div>
-                    <p class="small">天津维诺智创大数据科技有限公司</p>
+                    <p class="small" style="margin-left: 15px">天津维诺智创大数据科技有限公司</p>
                 </div>
             </div>
         </div>
@@ -352,7 +352,7 @@
         },
         methods: {
             home() {
-                this.$router.push({path: '/'});
+                this.$router.push({path: '/phone'});
             },
             off() {
                 this.show3 = false
@@ -383,7 +383,7 @@
 
 <style>
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         /*text-align: center;*/
@@ -391,9 +391,9 @@
 
     .header {
         height: 70px;
-        background: #5e5e5e;
+        background: #ffffff;
         display: flex;
-        top: 10;
+        top: 0;
         position: fixed;
         width: 100%;
         z-index: 999;
@@ -408,7 +408,7 @@
 
     .header_name p {
         margin: 0;
-        color: #ffffff;
+        color: #5e5e5e;
         text-align: right;
     }
 
@@ -418,9 +418,8 @@
     }
 
     .header_more img {
-        margin-top: 5px;
-        width: 30px;
-        height: 30px;
+        margin-top: -5px;
+        height: 45px;
     }
 
     .navigation_bar {
@@ -433,14 +432,19 @@
     }
 
     .navigation_bar_p {
-        color: #FFFFFF;
-        font-size: 16px;
+        color: #5e5e5e;
+        font-size: 14px;
     }
 
     .footer {
+         color: #ffffff;
         background: #5e5e5e;
-        color: #ffffff;
         padding-bottom: 5px;
+        padding-top:10px;
+    }
+
+    .footer p {
+        margin: 0;
     }
 
     .footer hr {
@@ -469,24 +473,26 @@
     }
 
     .foo {
-        color: #FFFFFF;
+        color: #ffffff;
         text-decoration: none;
     }
 
     .el-collapse-item__header {
-        color: #ffffff;
-        font-size: 18px;
-        background-color: #5e5e5e;
+        color: #5e5e5e;
+        font-size: 14px;
+        background-color: #ffffff;
+        font-weight: normal;
+        height: 38px;
     }
 
     .el-collapse-item__content {
-        padding-bottom: 20px;
+        padding-bottom: 16px;
     }
 
     .el-collapse-item__wrap {
-        background-color: #5e5e5e;
+        background-color: #ffffff;
         border: none;
-        font-size: 16px;
+        font-size: 12px;
     }
 
 

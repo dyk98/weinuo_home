@@ -44,29 +44,29 @@
             <router-link class="tag" to="/programme">方案</router-link>
             <div class="hr"></div>
             <div class="programme_icon">
-                <div class="programme_icon_m" style="background-color: #cc8846;">
+                <div class="programme_icon_m" style="background-color: #1570c4;">
                     <img src="/static/img/qiye.png" alt="">
                     <p>企业应用</p>
                 </div>
-                <div class="programme_icon_m" style="background-color: #dad656;">
+                <div class="programme_icon_m" style="background-color: #72a8d7;">
                     <img src="/static/img/yidong.png" alt="">
                     <p>移动应用</p>
                 </div>
-                <div class="programme_icon_m" style="background-color: #76d251;">
+                <div class="programme_icon_m" style="background-color: #1570c4;">
                     <img src="/static/img/yunyin.png" alt="">
                     <p>运营平台</p>
                 </div>
             </div>
             <div class="programme_icon">
-                <div class="programme_icon_m" style="background-color: #5941d0;">
+                <div class="programme_icon_m" style="background-color: #72a8d7;">
                     <img src="/static/img/shangwu.png" alt="">
                     <p>电子商务</p>
                 </div>
-                <div class="programme_icon_m" style="background-color: #d2433f;">
+                <div class="programme_icon_m" style="background-color: #1570c4;">
                     <img src="/static/img/kehu.png" alt="">
                     <p>客户关系</p>
                 </div>
-                <div class="programme_icon_m" style="background-color: #437cd2;">
+                <div class="programme_icon_m" style="background-color: #72a8d7;">
                     <img src="/static/img/shengchan.png" alt="">
                     <p>生产管理</p>
                 </div>
@@ -78,49 +78,49 @@
         <router-link class="tag" to="/industry">行业</router-link>
         <div class="hr"></div>
         <div class="industry_icon">
-            <router-link class="industry_icon_m" style=" background-color: #f894f8;" to="/industry/Medical">
+            <router-link class="industry_icon_m" style="background-color: #1570c4;" to="/industry/Medical">
                 <img src="/static/img/yiliao.png" alt="">
                 <p>医疗</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #4894f8;" to="/industry/Government">
+            <router-link class="industry_icon_m" style="background-color: #72a8d7;" to="/industry/Government">
                 <img src="/static/img/zhengfu.png" alt="">
                 <p>政府</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #dad656;" to="/industry/Agriculture">
+            <router-link class="industry_icon_m" style="background-color: #1570c4;" to="/industry/Agriculture">
                 <img src="/static/img/nongye.png" alt="">
                 <p>农业</p>
             </router-link>
         </div>
         <div class="industry_icon">
-            <router-link class="industry_icon_m" style="background-color: #f4aa3c;" to="/industry/Culture">
+            <router-link class="industry_icon_m" style="background-color: #72a8d7;" to="/industry/Culture">
                 <img src="/static/img/wenhua.png" alt="">
                 <p>文化</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #ea4c57;" to="/industry/Cosmetology">
+            <router-link class="industry_icon_m" style="background-color: #1570c4;" to="/industry/Cosmetology">
                 <img src="/static/img/meirong.png" alt="">
                 <p>美容</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #5941d0;" to="/industry/Tourism">
+            <router-link class="industry_icon_m" style="background-color: #72a8d7;" to="/industry/Tourism">
                 <img src="/static/img/lvyou.png" alt="">
                 <p>旅游</p>
             </router-link>
         </div>
         <div class="industry_icon">
-            <router-link class="industry_icon_m" style="background-color: #985bd2;" to="/industry/RealEstate">
+            <router-link class="industry_icon_m" style="background-color: #1570c4;" to="/industry/RealEstate">
                 <img src="/static/img/fangchan.png" alt="">
                 <p>地产</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #74d2a2;" to="/industry/Environment">
+            <router-link class="industry_icon_m" style="background-color: #72a8d7;" to="/industry/Environment">
                 <img src="/static/img/huanbao.png" alt="">
                 <p>环保</p>
             </router-link>
 
-            <router-link class="industry_icon_m" style="background-color: #d29e7d;" to="/industry/Furniture">
+            <router-link class="industry_icon_m" style="background-color: #1570c4;" to="/industry/Furniture">
                 <img src="/static/img/jiaju.png" alt="">
                 <p>家具</p>
             </router-link>
@@ -253,7 +253,7 @@
     }
 
     .swiper-container0 {
-        height: 400px;
+        height: 250px;
     }
 
     .service {
@@ -372,7 +372,7 @@
 
     .about {
         text-align: center;
-        height: 500px;
+        height: 460px;
         padding-top: 45px;
         background-color: #ffffff;
     }
