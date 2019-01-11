@@ -6,16 +6,16 @@
                     <img src="/static/img/more.png" alt="" @click="show3 = !show3">
                 </div>
                 <div class="header_name">
-                    <div>
+                    <div style="margin-top: 5px">
                         <p>天津维诺智创</p>
                         <p>Technology</p>
                     </div>
                     <div>
-                        <img style="height: 40px; margin-top: 10px" src="/static/img/logo.png"  alt="">
+                        <img style="height: 35px; margin: 8px" src="/static/img/logo.png"  alt="">
                     </div>
                 </div>
             </div>
-            <div style="height: 60px; background-color: #ffffff"></div>
+            <div style="height: 50px; background-color: #ffffff"></div>
             <el-collapse-transition>
                 <div class="navigation_bar" v-show="show3">
                     <div style="flex: 2; padding: 10px 15px; background-color: #ffffff;">
@@ -69,8 +69,6 @@
             <router-view/>
 
             <div class="footer">
-                <p style="text-align: center;">导航栏</p>
-                <hr>
                 <div class="navigation">
                     <router-link class="foo" to="/service"><P>服务</P></router-link>
                     <router-link class="foo" to="/industry"><p>行业</p></router-link>
@@ -291,11 +289,11 @@
                 pc: false,
                 sliders: [
                     {
-                        img: '/static/img/slide3.png'
+                        img: '/static/img/slide1.png'
                     }, {
                         img: '/static/img/slide2.png'
                     }, {
-                        img: '/static/img/slide1.png'
+                        img: '/static/img/slide3.png'
                     },
                 ],
             };
@@ -335,7 +333,7 @@
     }
 
     .header {
-        height: 60px;
+        height: 50px;
         background: #ffffff;
         display: flex;
         top: 0;
@@ -345,21 +343,20 @@
     }
 
     .header_name {
-        line-height: 30px;
         display: flex;
         width: 100%;
         justify-content: flex-end;
-        margin-right: 15px;
     }
 
     .header_name p {
         margin: 0;
         color: #5e5e5e;
         text-align: right;
+        font-size: 14px;
     }
 
     .header_more {
-        margin: 15px;
+        margin: 10px;
     }
 
     .header_more img {
