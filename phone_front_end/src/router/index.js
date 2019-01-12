@@ -3,9 +3,7 @@ import Router from 'vue-router'
 
 // 手机
 import WeinuoHome from '@/components/phone/WeinuoHome'
-import Service from '@/components/phone//service'
 
-import Industry from '@/components/phone/industry'
 import Agriculture from '@/components/phone/industry/Agriculture'
 import Medical from '@/components/phone/industry/Medical'
 import Government from '@/components/phone/industry/Government'
@@ -18,8 +16,8 @@ import Tourism from '@/components/phone/industry/Tourism'
 
 import Case from '@/components/phone/case'
 import CaseFirst from '@/components/phone/case/CaseFirst'
-import About from '@/components/phone/about'
 
+import About from '@/components/phone/about'
 import Advantage from '@/components/phone/about/Advantage'
 import Introduction from '@/components/phone/about/Introduction'
 import Idea from '@/components/phone/about/Idea'
@@ -39,6 +37,14 @@ import PcAbout from '@/components/pc/About'
 import PcSlider from '@/components/pc/Slider'
 
 Vue.use(Router);
+
+Vue.component('Advantage', Advantage);
+Vue.component('Introduction', Introduction);
+Vue.component('Idea', Idea);
+Vue.component('ManagementModel', ManagementModel);
+Vue.component('Prize', Prize);
+Vue.component('Business', Business);
+
 
 Vue.component('PcSlider', PcSlider);
 Vue.component('PcService', PcService);
@@ -62,14 +68,6 @@ export default new Router({
             path: '/phone',
             name: 'WeinuoHome',
             component: WeinuoHome,
-        }, {
-            path: '/service',
-            name: 'Service',
-            component: Service
-        }, {
-            path: '/industry',
-            name: 'Industry',
-            component: Industry
         }, {
             path: '/case',
             name: 'Case',

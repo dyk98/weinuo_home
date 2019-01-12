@@ -70,8 +70,8 @@
 
             <div class="footer">
                 <div class="navigation">
-                    <router-link class="foo" to="/service"><P>服务</P></router-link>
-                    <router-link class="foo" to="/industry"><p>行业</p></router-link>
+                    <div class="foo"><P>服务</P></div>
+                    <div class="foo"><p>行业</p></div>
                     <router-link class="foo" to="/case"><p>案例</p></router-link>
                     <router-link class="foo" to="/about"><p>关于</p></router-link>
                 </div>
@@ -658,5 +658,21 @@
         width: 6%;
     }
 
+    .about_ {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .about_content {
+        font-size: 14px;
+        color: #5e5e5e;
+        text-align: left;
+    }
+
+    .about_content_p {
+        color: #000000;
+        font-size: 16px;
+        text-align: center;
+    }
 
 </style>

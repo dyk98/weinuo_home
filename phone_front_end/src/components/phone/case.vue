@@ -1,9 +1,6 @@
 <template>
-    <div class="case_area">
-        <div class="section_title">
-            <h3>案例</h3>
-        </div>
-        <p>暂无案例</p>
+    <div class="case_">
+    <div>暂无案例</div>
     </div>
 </template>
 
@@ -14,9 +11,9 @@
 </script>
 
 <style scoped>
-    .case_area {
-        height: 452px;
-        background-color: #F5f5f5;
-        margin-left: 10px;
+    .case_ {
+        height: 700px;
+        padding: 0 15px;
+        background-color: #fff;
     }
 </style>

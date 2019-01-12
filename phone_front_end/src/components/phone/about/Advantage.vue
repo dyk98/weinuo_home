@@ -1,24 +1,30 @@
 <template>
     <!--优势-->
-    <div class="body" style="height: auto">
-        <div class="pagegrids about-grid7">
-            <div class="container">
-                <h3>
-                    团队优势
-                </h3>
-                <i></i>
-                <div class="pagegrids-con imgs">
-                    <div class="col-md-4 center">
+    <div>
+        <div>
+            <img src="/static/img/advantage.png" style="width: 100%" alt="">
+        </div>
+        <div class="about_">
 
-                    </div>
-                    <div class="col-md-8">
-                        <div class="txt">
-                            维诺开发人员是一支专业、年轻、充满活力且优秀的团队，90%的员工达到了大学毕业以上，在软件开发有资深经验，承接开发项目范围软件方面如：企业管理软件，企业APP开发，网站开发，电子商务，B/S，C/S系统应用，ERP、DRP、CRM、MIS等管理系统有丰富的项目经验。<br>
-                            <br>
-                            实践出真知，无论是C/S结构的应用系统，还是B/S结构的WEB信息系统，维朗科技都拥有经验丰富项目管理团队，实行国际软件开发流程标准化管理，快速、高效地交付产品。
-                        </div>
-                    </div>
-                </div>
+            <div class="tag">公司优势</div>
+            <div class="hr"></div>
+            <div class="about_content">
+                <p class="about_content_p">天津维诺智创科技有限公司</p>
+                <p>
+                    维诺科技一直专注于移动互联网信息交互视觉（UI）设计及终端软件（APP/H5/微信）开发领域。
+                    在信息交互视觉（UI）设计、终端软件（APP/H5/微信）开发和运营管理服务三大业务方向上，
+                    为广大用户提供全面、高效的移动互联网设计服务、
+                    解决方案、软件产品、项目实施和运营服务。
+                </p>
+                <p>
+                    目前员工20多人，拥有规模强大、技术领先、经验丰富的UI设计及移动互联网软件研发团队。
+                    发展状况：公司助力传统企业转型，主要从事软件开发，网站建设，网站UI，APP开发，微信开发，综合商城，ERP系统，分销系统等设计与开发。
+                </p>
+                <p>
+                    公司文化：公司以“专注网站，用心服务”为核心价值，以“技术驱动，服务至上”为宗旨，
+                    一切以用户需求为中心，希望通过专业水平和不懈努力，重塑企业网络形象，为企业产品推广文化发展提供服务指导；
+                </p>
+
             </div>
         </div>
     </div>
@@ -31,9 +37,5 @@
 </script>
 
 <style scoped>
-    .container {
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 2em;
-    }
+
 </style>

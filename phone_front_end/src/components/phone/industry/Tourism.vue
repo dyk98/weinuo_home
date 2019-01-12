@@ -1,30 +1,28 @@
 <template>
-    <div class="body">
+    <div>
         <!--旅游-->
-        <div class="container">
-            <h1>行业认知</h1>
+        <div>
+            <img src="/static/img/slider1.png" style="width: 100%" alt="">
         </div>
-        <div class="container">
-            <h3>旅游</h3><i></i>
-            <div class="ws_discribe">
-                依托互联网，以满足旅游消费者信息查询、产品预定及服务评价为核心目的，囊括了包括航空公司、酒店、景区、租车公司、海内外旅游局等旅游服务供应商。
-            </div>
-            <div class="ws_hard02">
+        <div class="about_">
+
+            <div class="tag">行业认知</div>
+            <div class="hr"></div>
+            <div class="about_content">
+                <p class="about_content_p">旅游</p>
+                <p>
+                    依托互联网，以满足旅游消费者信息查询、产品预定及服务评价为核心目的，囊括了包括航空公司、酒店 、
+                    景区、租车公司、海内外旅游局等旅游服务供应商。
+                </p>
+
                 <ul>
-                    <li class="wsh wsh01 left">
-                        我国旅游业各个领域与互联网深度融合发展；
-                    </li>
-                    <li class="wsh wsh02 left">
-                        推进旅游区域互联网基础设施建设；
-                    </li>
-                    <li class="wsh wsh03 left">
-                        发展在线旅游新业态；
-                    </li>
-                    <li class="wsh wsh04 left">
-                        开展智慧旅游景区建设。
-                    </li>
-                    <div class="clearfix"></div>
+                    <li>我国旅游业各个领域与互联网深度融合发展；</li>
+                    <li>推进旅游区域互联网基础设施建设；</li>
+                    <li>发展在线旅游新业态；</li>
+                    <li>开展智慧旅游景区建设。</li>
+
                 </ul>
+
             </div>
         </div>
     </div>
@@ -37,9 +35,5 @@
 </script>
 
 <style scoped>
-    .container {
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 2em;
-    }
+
 </style>
