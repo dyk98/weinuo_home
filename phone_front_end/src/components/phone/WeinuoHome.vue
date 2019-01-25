@@ -2,7 +2,7 @@
     <div class="all">
         <!--动态-->
         <div style="width: 100%; margin:0 auto">
-            <div class="swiper-container0">
+            <div class="swiper-containerph">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" v-for="slider in sliders">
                         <img :src="slider.img" alt="" style="width: 100%; height: 250px">
@@ -222,7 +222,7 @@
         overflow: hidden;
     }
 
-    .swiper-container0 {
+    .swiper-containerph {
         height: 250px;
     }
 
