@@ -35,6 +35,7 @@
         padding-top: 50px;
         background-color: #ffffff;
         padding-bottom: 100px;
+        height: 560px;
     }
 
     .hr {

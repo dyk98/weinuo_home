@@ -64,7 +64,8 @@
         padding-bottom: 100px;
         padding-top: 45px;
         text-align: center;
-        background-color: #ffffff;
+        background-color: #f5f5f5;
+        height: 650px;
     }
 
     .hr {
