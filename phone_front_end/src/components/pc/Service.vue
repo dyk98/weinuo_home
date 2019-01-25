@@ -73,7 +73,8 @@
 
     }
     .service_icon img {
-        width: 70%;
+        width: 100px;
+        height: 100px;
         margin-top: 2em;
     }
 

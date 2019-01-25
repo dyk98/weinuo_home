@@ -71,6 +71,7 @@
         width: 70%;
         margin: 0 auto;
         padding-bottom: 100px;
+        height: 800px;
     }
 
     .industry_icon {

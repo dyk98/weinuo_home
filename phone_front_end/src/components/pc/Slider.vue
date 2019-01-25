@@ -3,8 +3,9 @@
         <div class="swiper-container0">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="slider in sliders">
-                    <img :src="slider.img" alt="" style="width: 100%; max-height: 600px">
+                    <img :src="slider.img" alt="" style="width: 100%; height: 600px">
                 </div>
+                <div class="swiper-pagination" style="margin-top: 560px;display: flex;justify-content: center;width: 100%;"></div>
             </div>
         </div>
     </div>
@@ -44,13 +45,22 @@
                 loop: true,
                 autoplay: true,
                 effect: 'fade',
-
+                pagination: {
+                    el: '.swiper-pagination',
+                },
             })
 
         }
     }
 </script>
 
-<style scoped>
+<style>
+
+    .swiper-container0 {
+        height: 600px;
+    }
+    .swiper-pagination-bullet {
+        margin: 0 5px;
+    }
 
 </style>

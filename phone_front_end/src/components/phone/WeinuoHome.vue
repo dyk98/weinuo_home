@@ -8,7 +8,6 @@
                         <img :src="slider.img" alt="" style="width: 100%; height: 250px">
                     </div>
                     <div class="swiper-pagination" style="margin-top: 230px;display: flex;justify-content: center;width: 100%;"></div>
-
                 </div>
             </div>
         </div>
@@ -225,6 +224,10 @@
 
     .swiper-container0 {
         height: 250px;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 5px;
     }
 
     .service {
